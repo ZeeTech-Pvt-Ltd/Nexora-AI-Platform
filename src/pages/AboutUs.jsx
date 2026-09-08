@@ -7,13 +7,13 @@ import { ABOUT } from '../data/content.js';
 
 export default function AboutUs() {
   useMeta({
-    title: 'About Gewinode Raven | Our Story, Values & Mission',
+    title: 'About Nexora AI Platform | Our Story, Values & Mission',
     description:
-      'Meet the team behind Gewinode Raven, founded in Sydney. Discover our story, values and what makes our AI trading platform different.',
+      'Meet the team behind Nexora AI Platform, founded in Sydney. Discover our story, values and what makes our AI trading platform different.',
     path: '/about-us',
     keywords: [
-      'Gewinode Raven team',
-      'Gewinode Raven story',
+      'Nexora AI Platform team',
+      'Nexora AI Platform story',
       'trading company Sydney',
       'AI trading engineers',
     ],
@@ -34,7 +34,7 @@ export default function AboutUs() {
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
             {ABOUT.story.map((p, i) => (
               <Reveal key={i}>
-                <p style={{ color: '#a89e92', fontSize: 16.5, lineHeight: 1.8, marginBottom: 22 }}>
+                <p style={{ color: '#6b5f4e', fontSize: 16.5, lineHeight: 1.8, marginBottom: 22 }}>
                   {p}
                 </p>
               </Reveal>
@@ -69,9 +69,9 @@ export default function AboutUs() {
                 {ABOUT.difference.map((d) => (
                   <li
                     key={d}
-                    style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#f5efe8', fontSize: 15 }}
+                    style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#211a10', fontSize: 15 }}
                   >
-                    <Icon name="check" size={18} style={{ color: '#f97316', flexShrink: 0, marginTop: 3 }} />
+                    <Icon name="check" size={18} style={{ color: '#b45309', flexShrink: 0, marginTop: 3 }} />
                     {d}
                   </li>
                 ))}
@@ -85,7 +85,7 @@ export default function AboutUs() {
                     <span className="t--a" />
                     <span className="t--g" />
                   </span>
-                  about — gewinode raven
+                  about — nexora ai platform
                 </div>
                 <div className="terminal__body">
                   <div className="readout__row" style={{ marginBottom: 10 }}>
@@ -110,7 +110,7 @@ export default function AboutUs() {
           </div>
           <Reveal style={{ textAlign: 'center', marginTop: 48 }}>
             <Link className="btn btn--ember" to="/sign-up">
-              Join Gewinode Raven
+              Join Nexora AI Platform
               <Icon name="arrow-right" size={17} />
             </Link>
           </Reveal>

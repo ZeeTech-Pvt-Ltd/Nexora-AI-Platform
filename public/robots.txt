@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gewinoderaven.com/sitemap.xml
+Sitemap: https://nexora-ai-platform.com/sitemap.xml

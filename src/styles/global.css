@@ -1,23 +1,23 @@
 /* ============================================================
-   Gewinode Raven — "Dark Ember Terminal" design system
-   Warm charcoal surfaces, ember-orange accents, mono data labels
+   Nexora AI Platform — "Amber Light" design system
+   Airy sand surfaces, amber-gold accents, mono data labels
    ============================================================ */
 
 :root {
-  --bg: #161310;
-  --bg-deep: #0e0c0a;
-  --surface: #211c17;
-  --surface-2: #2a231d;
-  --line: #39312a;
-  --line-soft: #2b251f;
-  --ink: #f5efe8;
-  --muted: #a89e92;
-  --ember: #f97316;
-  --ember-bright: #ff8a3d;
-  --ember-deep: #ea580c;
-  --amber: #fbbf24;
-  --green: #4ade80;
-  --red: #f87171;
+  --bg: #f4f0e6;
+  --bg-deep: #faf8f3;
+  --surface: #ffffff;
+  --surface-2: #f7f2e8;
+  --line: #d8cfc0;
+  --line-soft: #e8e2d5;
+  --ink: #211a10;
+  --muted: #6b5f4e;
+  --ember: #b45309;
+  --ember-bright: #d97706;
+  --ember-deep: #92400e;
+  --amber: #ea580c;
+  --green: #16a34a;
+  --red: #dc2626;
   --radius: 14px;
   --container: 1224px;
   --font-display: 'Sora', system-ui, sans-serif;
@@ -67,7 +67,7 @@ button {
 
 ::selection {
   background: var(--ember);
-  color: #1a120a;
+  color: #ffffff;
 }
 
 .container {
@@ -98,7 +98,7 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(249, 115, 22, 0.07) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(217, 119, 6, 0.07) 1px, transparent 1px);
   background-size: 26px 26px;
   pointer-events: none;
 }
@@ -199,14 +199,15 @@ button {
 }
 
 .btn--ember {
-  background: linear-gradient(120deg, var(--ember-bright), var(--ember-deep));
-  color: #1a120a;
-  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.28);
+  /* deeper than the accent vars so white text clears AA contrast */
+  background: linear-gradient(120deg, #b45309, #92400e);
+  color: #ffffff;
+  box-shadow: 0 6px 24px rgba(217, 119, 6, 0.28);
 }
 
 .btn--ember:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 32px rgba(249, 115, 22, 0.42);
+  box-shadow: 0 10px 32px rgba(217, 119, 6, 0.42);
 }
 
 .btn--ghost {
@@ -232,7 +233,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(14, 12, 10, 0.82);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line-soft);
 }
@@ -322,7 +323,7 @@ button {
   gap: 4px;
   padding: 16px 24px 24px;
   border-top: 1px solid var(--line-soft);
-  background: rgba(14, 12, 10, 0.97);
+  background: rgba(255, 255, 255, 0.97);
 }
 
 .mobile-menu.is-open {
@@ -363,7 +364,7 @@ button {
 .hero__glow--one {
   width: 560px;
   height: 560px;
-  background: rgba(249, 115, 22, 0.16);
+  background: rgba(217, 119, 6, 0.16);
   top: -180px;
   right: -120px;
 }
@@ -371,7 +372,7 @@ button {
 .hero__glow--two {
   width: 420px;
   height: 420px;
-  background: rgba(251, 191, 36, 0.08);
+  background: rgba(234, 88, 12, 0.08);
   bottom: -160px;
   left: -140px;
 }
@@ -394,8 +395,8 @@ button {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ember-bright);
-  border: 1px solid rgba(249, 115, 22, 0.35);
-  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  background: rgba(217, 119, 6, 0.08);
   border-radius: 999px;
   padding: 8px 16px;
   margin-bottom: 22px;
@@ -406,14 +407,14 @@ button {
   height: 8px;
   border-radius: 50%;
   background: var(--green);
-  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
-  70% { box-shadow: 0 0 0 9px rgba(74, 222, 128, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5); }
+  70% { box-shadow: 0 0 0 9px rgba(22, 163, 74, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
 }
 
 .hero__title {
@@ -505,7 +506,7 @@ button {
   border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 24px 64px rgba(23, 40, 33, 0.1);
   position: relative;
 }
 
@@ -543,9 +544,9 @@ button {
   border-radius: 50%;
 }
 
-.terminal__dots .t--r { background: #f87171; }
-.terminal__dots .t--a { background: #fbbf24; }
-.terminal__dots .t--g { background: #4ade80; }
+.terminal__dots .t--r { background: #dc2626; }
+.terminal__dots .t--a { background: #f59e0b; }
+.terminal__dots .t--g { background: #16a34a; }
 
 .terminal__body {
   padding: 26px;
@@ -557,7 +558,7 @@ button {
   position: relative;
   border-top: 1px solid var(--line-soft);
   border-bottom: 1px solid var(--line-soft);
-  background: rgba(22, 19, 16, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   overflow: hidden;
 }
 
@@ -673,8 +674,8 @@ button {
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: rgba(249, 115, 22, 0.4);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 16px 40px rgba(23, 40, 33, 0.08);
 }
 
 .card:hover::before {
@@ -685,8 +686,8 @@ button {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.25);
+  background: rgba(217, 119, 6, 0.1);
+  border: 1px solid rgba(217, 119, 6, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,7 +828,7 @@ button {
   height: 46px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--ember), var(--ember-deep));
-  color: #1a120a;
+  color: #ffffff;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 16px;
@@ -878,7 +879,7 @@ button {
 }
 
 .faq__item.is-open {
-  border-color: rgba(249, 115, 22, 0.45);
+  border-color: rgba(217, 119, 6, 0.45);
 }
 
 .faq__q {
@@ -950,7 +951,7 @@ button {
 
 .caps__cell:hover {
   transform: translateY(-4px);
-  border-color: rgba(249, 115, 22, 0.4);
+  border-color: rgba(217, 119, 6, 0.4);
 }
 
 .caps__cell svg {
@@ -1131,11 +1132,11 @@ button {
 .field input:focus {
   outline: none;
   border-color: var(--ember);
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
 }
 
 .field input::placeholder {
-  color: #6f6559;
+  color: #8a7a5e;
 }
 
 .field input.input-error {
@@ -1170,8 +1171,8 @@ button {
 }
 
 .form__error {
-  background: rgba(248, 113, 113, 0.1);
-  border: 1px solid rgba(248, 113, 113, 0.4);
+  background: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.4);
   color: var(--red);
   border-radius: 10px;
   padding: 12px 16px;
@@ -1179,8 +1180,8 @@ button {
 }
 
 .form__success {
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.4);
+  background: rgba(22, 163, 74, 0.1);
+  border: 1px solid rgba(22, 163, 74, 0.4);
   color: var(--green);
   border-radius: 10px;
   padding: 12px 16px;
@@ -1215,7 +1216,7 @@ button {
 }
 
 .iti__country.iti__highlight {
-  background: rgba(249, 115, 22, 0.15);
+  background: rgba(217, 119, 6, 0.15);
 }
 
 .iti__selected-flag {
@@ -1255,7 +1256,7 @@ button {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: rgba(249, 115, 22, 0.12);
+  background: rgba(217, 119, 6, 0.12);
   filter: blur(90px);
   top: -160px;
   left: 50%;

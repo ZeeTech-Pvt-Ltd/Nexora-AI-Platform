@@ -3,11 +3,11 @@ import useMeta from '../hooks/useMeta.js';
 
 export default function SignIn() {
   useMeta({
-    title: 'Sign In | Access Your Gewinode Raven Account',
+    title: 'Sign In | Access Your Nexora AI Platform Account',
     description:
-      'Sign in to your Gewinode Raven account to view your dashboard, live trades and portfolio performance.',
+      'Sign in to your Nexora AI Platform account to view your dashboard, live trades and portfolio performance.',
     path: '/sign-in',
-    keywords: ['Gewinode Raven sign in', 'Gewinode Raven login', 'trading account login'],
+    keywords: ['Nexora AI Platform sign in', 'Nexora AI Platform login', 'trading account login'],
   });
 
   return (
@@ -17,7 +17,7 @@ export default function SignIn() {
       </div>
       <div className="container" style={{ maxWidth: 520 }}>
         <h1 className="section-title" style={{ textAlign: 'center', fontSize: 28, marginBottom: 32 }}>
-          Sign in to Gewinode Raven
+          Sign in to Nexora AI Platform
         </h1>
         <div className="terminal">
           <div className="terminal__bar">
@@ -26,7 +26,7 @@ export default function SignIn() {
               <span className="t--a" />
               <span className="t--g" />
             </span>
-            gewinode-raven — sign in
+            nexora-ai-platform — sign in
           </div>
           <div className="terminal__body">
             <RegistrationForm

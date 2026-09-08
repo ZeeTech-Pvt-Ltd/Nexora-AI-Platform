@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="logo">
               <Logo />
-              <span className="logo__text">Gewinode Raven</span>
+              <span className="logo__text">Nexora AI Platform</span>
             </Link>
             <p className="footer__blurb">{FOOTER.blurb}</p>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <Icon name="globe" size={16} />
-                gewinoderaven.com — the only official domain
+                nexora-ai-platform.com — the only official domain
               </li>
             </ul>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__disclaimer">{FOOTER.disclaimer}</p>
-          <p className="footer__copyright">Copyright 2026 © Gewinode Raven. All rights reserved.</p>
+          <p className="footer__copyright">Copyright 2026 © Nexora AI Platform. All rights reserved.</p>
         </div>
       </div>
     </footer>

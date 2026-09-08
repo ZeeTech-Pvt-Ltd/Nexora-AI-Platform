@@ -18,7 +18,7 @@ export default function Hero() {
             </span>
 
             <h1 className="hero__title">
-              <span className="ember">Gewinode Raven</span> puts AI-powered precision behind
+              <span className="ember">Nexora AI Platform</span> puts AI-powered precision behind
               every trade
             </h1>
 
@@ -60,7 +60,7 @@ export default function Hero() {
                 <span className="t--a" />
                 <span className="t--g" />
               </span>
-              gewinode-raven — register
+              nexora-ai-platform — register
             </div>
             <div className="terminal__body">
               <RegistrationForm idPrefix="hero" />

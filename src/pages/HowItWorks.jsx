@@ -7,12 +7,12 @@ import { PRODUCT, CAPABILITIES } from '../data/content.js';
 
 export default function HowItWorks() {
   useMeta({
-    title: 'How Gewinode Raven Works | 3 Steps to AI Trading',
+    title: 'How Nexora AI Platform Works | 3 Steps to AI Trading',
     description:
-      'See how Gewinode Raven works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
+      'See how Nexora AI Platform works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
     path: '/how-it-works',
     keywords: [
-      'Gewinode Raven how it works',
+      'Nexora AI Platform how it works',
       'how AI trading works',
       'automated trading setup',
       'minimum deposit A$250',

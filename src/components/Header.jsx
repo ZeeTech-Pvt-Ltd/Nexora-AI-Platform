@@ -12,7 +12,7 @@ export default function Header() {
       <div className="container header__inner">
         <Link to="/" className="logo" onClick={() => setOpen(false)}>
           <Logo />
-          <span className="logo__text">Gewinode Raven</span>
+          <span className="logo__text">Nexora AI Platform</span>
         </Link>
 
         <nav className="nav" aria-label="Main navigation">

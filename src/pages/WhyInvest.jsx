@@ -7,12 +7,12 @@ import { WHY } from '../data/content.js';
 
 export default function WhyInvest() {
   useMeta({
-    title: 'Why Invest with Gewinode Raven | 6 Reasons',
+    title: 'Why Invest with Nexora AI Platform | 6 Reasons',
     description:
-      'Six reasons Australians choose Gewinode Raven: a 24/7 AI trading engine, 85% execution accuracy, bank-grade security, transparency and fast withdrawals.',
+      'Six reasons Australians choose Nexora AI Platform: a 24/7 AI trading engine, 85% execution accuracy, bank-grade security, transparency and fast withdrawals.',
     path: '/why-invest',
     keywords: [
-      'Gewinode Raven why invest',
+      'Nexora AI Platform why invest',
       'benefits of AI trading',
       'automated trading benefits',
       'secure trading Australia',
@@ -50,11 +50,11 @@ export default function WhyInvest() {
           <Reveal>
             <div
               className="card"
-              style={{ borderColor: 'rgba(249,115,22,0.4)', marginBottom: 32 }}
+              style={{ borderColor: 'rgba(217,119,6,0.4)', marginBottom: 32 }}
             >
-              <Icon name="shield-check" size={28} style={{ color: '#f97316', marginBottom: 12 }} />
+              <Icon name="shield-check" size={28} style={{ color: '#b45309', marginBottom: 12 }} />
               <h3 style={{ fontFamily: "'Sora', sans-serif", marginBottom: 10 }}>A note on risk</h3>
-              <p style={{ color: '#a89e92', fontSize: 14.5 }}>{WHY.riskNote}</p>
+              <p style={{ color: '#6b5f4e', fontSize: 14.5 }}>{WHY.riskNote}</p>
             </div>
             <Link className="btn btn--ember" to={WHY.cta.to}>
               {WHY.cta.label}

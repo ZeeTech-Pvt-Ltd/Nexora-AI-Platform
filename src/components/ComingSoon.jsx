@@ -3,8 +3,8 @@ import useMeta from '../hooks/useMeta.js';
 
 export default function ComingSoon({ title }) {
   useMeta({
-    title: `${title} | Gewinode Raven`,
-    description: `${title} — coming soon on the Gewinode Raven platform.`,
+    title: `${title} | Nexora AI Platform`,
+    description: `${title} — coming soon on the Nexora AI Platform platform.`,
     path: `/${title.toLowerCase().replace(/\s+/g, '-')}`,
   });
 

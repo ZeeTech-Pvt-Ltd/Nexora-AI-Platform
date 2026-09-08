@@ -1,11 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:ravengewinode.com)",
-      "Bash(curl -sL --max-time 30 \"https://ravengewinode.com/\" -o /tmp/raven-ref.html)",
       "Read(//tmp/**)",
-      "Bash(grep -oE 'https?://[^\"]*\\\\.css[^\"]*' /tmp/raven-ref.html | head -5; echo ---; grep -oiE '\\(font-family|--[a-z-]+:|#[0-9a-f]{3,6}\\)' /tmp/raven-ref.html | sort | uniq -c | sort -rn | head -40)",
-      "Bash(grep -oiE 'font-family:[^;\"]{3,80}|href=\"[^\"]*\\\\.css|src=\"[^\"]*\\\\.js' /tmp/raven-ref.html | sort | uniq -c | sort -rn | head -20; echo ---STYLES---; grep -c 'style=' /tmp/raven-ref.html)",
       "Bash(npm install *)",
       "Bash(node -e \"const p=require\\('./node_modules/intl-tel-input/package.json'\\); console.log\\('version:', p.version\\)\")",
       "Bash(grep -oE 'attachUtils[^;]{0,160}' node_modules/intl-tel-input/build/js/intlTelInput.js)",
@@ -15,7 +11,6 @@
       "Bash(npm run *)",
       "Bash(netstat -ano)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5184/)",
-      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-raven.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-au.mjs\")",
       "Bash(sed -i 's/^          label={CAPABILITIES\\\\.label}$/          /' src/sections/Capabilities.jsx)",
       "Bash(sed -i 's/^          label={DIFFERENTIATORS\\\\.label}$/          /' src/sections/Differentiators.jsx)",
@@ -29,7 +24,26 @@
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-seo.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/audit-seo.mjs\")",
       "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-headings.mjs\")",
-      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-readout.mjs\")"
+      "Bash(node \"C:/Users/samee/AppData/Local/Temp/verify-readout.mjs\")",
+      "Bash(xargs sed -i 's/Nexora AI Platform/Nexora AI Platform/g')",
+      "Bash(xargs sed -i -e 's/#0e0c0a/#08100e/g' -e 's/#161310/#14211e/g' -e 's/#211c17/#1a2c27/g' -e 's/#2a231d/#213630/g' -e 's/#39312a/#24403a/g' -e 's/#2b251f/#1b2e2a/g' -e 's/#f5efe8/#eefaf5/g' -e 's/#a89e92/#8fb3a7/g' -e 's/#f97316/#34d399/g' -e 's/#ff8a3d/#6ee7b7/g' -e 's/#ea580c/#059669/g' -e 's/#fbbf24/#a3e635/g' -e 's/#1a120a/#052e25/g' -e 's/#6f6559/#667d72/g' -e 's/rgba\\(249, 115, 22,/rgba\\(52, 211, 153,/g' -e 's/rgba\\(249,115,22,/rgba\\(52,211,153,/g' -e 's/rgba\\(251, 191, 36,/rgba\\(163, 230, 53,/g' -e 's/rgba\\(14, 12, 10,/rgba\\(8, 16, 14,/g' -e 's/rgba\\(22, 19, 16,/rgba\\(20, 33, 30,/g')",
+      "Bash(sed -i -e 's/#0e0c0a/#08100e/g' -e 's/#161310/#14211e/g' -e 's/#39312a/#24403a/g' -e 's/#f5efe8/#eefaf5/g' -e 's/#a89e92/#8fb3a7/g' -e 's/#f97316/#34d399/g' -e 's/#ff8a3d/#6ee7b7/g' -e 's/#ea580c/#059669/g' index.html public/favicon.svg public/og-image.svg)",
+      "Bash(xargs sed -i -e 's/#6ee7b7/#10b981/g' -e 's/#059669/#047857/g' -e 's/#1a2c27/#ffffff/g' -e 's/#24403a/#c9d6cd/g' -e 's/#1b2e2a/#e2e9e3/g' -e 's/#a3e635/#65a30d/g' -e 's/#4ade80/#16a34a/g' -e 's/#34d399/#047857/g')",
+      "Bash(sed -i 's/#08100e/#f6f8f6/g' index.html)",
+      "Bash(sed -i -e 's/#08100e/#f6f8f6/g' -e 's/#14211e/#ffffff/g' -e 's/#24403a/#c9d6cd/g' -e 's/#eefaf5/#10231c/g' -e 's/#8fb3a7/#5c7067/g' -e 's/#6ee7b7/#10b981/g' -e 's/#059669/#047857/g' public/og-image.svg)",
+      "Bash(sed -i -e 's/rgba\\(52, 211, 153,/rgba\\(217, 119, 6,/g' -e 's/rgba\\(163, 230, 53,/rgba\\(234, 88, 12,/g' -e 's/#65a30d/#f59e0b/g' src/styles/global.css)",
+      "Bash(sed -i -e 's/color: '\\\\''#047857'\\\\''/color: '\\\\''#b45309'\\\\''/g' -e 's/color: \"#047857\"/color: \"#b45309\"/g' -e 's/color: '\\\\''#f59e0b'\\\\''//g' src/pages/AboutUs.jsx src/pages/WhyInvest.jsx src/sections/Innovation.jsx src/components/RegistrationForm.jsx)",
+      "Bash(sed -i -e 's/rgba\\(52,211,153,0.4\\)/rgba\\(217,119,6,0.4\\)/g' src/pages/WhyInvest.jsx)",
+      "Bash(sed -i -e 's/rgba\\(52,211,153,0.25\\)/rgba\\(217,119,6,0.25\\)/g' -e 's/stopColor=\"#047857\"/stopColor=\"#d97706\"/g' -e 's/stopColor=\"#65a30d\"/stopColor=\"#ea580c\"/g' -e 's/fill=\"#65a30d\"/fill=\"#f59e0b\"/g' src/sections/Promo.jsx)",
+      "Bash(xargs sed -i -e 's/'\\\\''#5c7067'\\\\''/'\\\\''#6b5f4e'\\\\''/g' -e 's/'\\\\''#10231c'\\\\''/'\\\\''#211a10'\\\\''/g' -e 's/'\\\\''#c9d6cd'\\\\''/'\\\\''#d8cfc0'\\\\''/g' -e 's/'\\\\''#e2e9e3'\\\\''/'\\\\''#e8e2d5'\\\\''/g')",
+      "Bash(sed -i \"s/color: '#10b981'/color: '#b45309'/g\" src/components/RegistrationForm.jsx)",
+      "Bash(sed -i -e 's/stroke=\"#e2e9e3\"/stroke=\"#e8e2d5\"/g' -e 's/stroke=\"#c9d6cd\"/stroke=\"#d8cfc0\"/g' src/sections/Promo.jsx)",
+      "Bash(sed -i 's/content=\"#f6f8f6\"/content=\"#faf8f3\"/g' index.html)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -s -i -X OPTIONS \"https://apexai-experts.com/homeMailAction.php\" -H \"Origin: http://localhost:5184\" -H \"Access-Control-Request-Method: POST\" -H \"Access-Control-Request-Headers: content-type\" --max-time 20)",
+      "Bash(curl -s -i -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"NexoraAIPlatform-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"test@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)",
+      "Bash(curl -s -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"NexoraAIPlatform-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"tester-20260908@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)",
+      "Bash(curl -s -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"GewinodeRaven-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"tester-20260908b@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)"
     ],
     "additionalDirectories": [
       "C:\\Users\\samee\\AppData\\Local\\Temp"

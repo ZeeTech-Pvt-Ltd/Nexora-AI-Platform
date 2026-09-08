@@ -19,7 +19,7 @@ const setOrCreate = (attr, value, content) => {
 };
 
 const BASE_KEYWORDS = [
-  'Gewinode Raven',
+  'Nexora AI Platform',
   'AI trading platform',
   'automated trading',
   'AI trading engine',

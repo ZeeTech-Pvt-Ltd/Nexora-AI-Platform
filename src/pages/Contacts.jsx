@@ -6,15 +6,15 @@ import { CONTACTS } from '../data/content.js';
 
 export default function Contacts() {
   useMeta({
-    title: 'Contact Gewinode Raven | 24/7 Support Team',
+    title: 'Contact Nexora AI Platform | 24/7 Support Team',
     description:
-      'Contact the Gewinode Raven support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
+      'Contact the Nexora AI Platform support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
     path: '/contact-us',
     keywords: [
-      'Gewinode Raven contact',
+      'Nexora AI Platform contact',
       'trading support Australia',
       '24/7 trading support',
-      'Gewinode Raven callback',
+      'Nexora AI Platform callback',
     ],
   });
 
@@ -56,7 +56,7 @@ export default function Contacts() {
                 </div>
                 <h2>Stay safe</h2>
                 <p>{CONTACTS.note}</p>
-                <span className="big">gewinoderaven.com is our only official domain</span>
+                <span className="big">nexora-ai-platform.com is our only official domain</span>
               </div>
             </Reveal>
 

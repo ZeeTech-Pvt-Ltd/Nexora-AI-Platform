@@ -7,7 +7,7 @@ export default function FaqSection() {
   return (
     <section className="section section--surface">
       <div className="container">
-        <SectionHead title="Frequently asked questions about Gewinode Raven" />
+        <SectionHead title="Frequently asked questions about Nexora AI Platform" />
         <FaqList items={FAQS} />
       </div>
       <FaqSchema />

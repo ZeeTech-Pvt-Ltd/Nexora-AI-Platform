@@ -1,11 +1,11 @@
-// All site copy for Gewinode Raven — single source of truth.
-// Keyword: Gewinode Raven. Target market: Australia.
+// All site copy for Nexora AI Platform — single source of truth.
+// Keyword: Nexora AI Platform. Target market: Australia.
 
 export const SITE = {
-  name: 'Gewinode Raven',
-  url: 'https://gewinoderaven.com/',
-  email: 'support@gewinoderaven.com',
-  offerName: 'GewinodeRaven-Site',
+  name: 'Nexora AI Platform',
+  url: 'https://nexora-ai-platform.com/',
+  email: 'support@nexora-ai-platform.com',
+  offerName: 'NexoraAIPlatform-Site',
   formEndpoint: 'https://apexai-experts.com/homeMailAction.php',
   tagline: 'AI-powered trading, engineered for Australia',
 };
@@ -21,8 +21,8 @@ export const NAV_LINKS = [
 
 export const HERO = {
   kicker: 'Live · Engine online · AU verified',
-  titleLines: ['Gewinode Raven puts', 'AI-powered precision behind every trade'],
-  // Rendered as: Gewinode Raven (ember gradient) puts AI-powered precision behind every trade
+  titleLines: ['Nexora AI Platform puts', 'AI-powered precision behind every trade'],
+  // Rendered as: Nexora AI Platform (ember gradient) puts AI-powered precision behind every trade
   sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence — without staring at charts all day.',
   ctaPrimary: { label: 'Register Now', to: '/sign-up' },
   ctaSecondary: { label: 'See how it works', to: '/how-it-works' },
@@ -54,7 +54,7 @@ export const STATS = [
 
 export const FEATURES = {
   title: 'Experience smarter trading with AI-driven precision',
-  lead: 'Every part of the Gewinode Raven platform is built around one goal: turning raw market data into calm, confident decisions.',
+  lead: 'Every part of the Nexora AI Platform platform is built around one goal: turning raw market data into calm, confident decisions.',
   items: [
     {
       icon: 'cpu',
@@ -128,7 +128,7 @@ export const EFFORTLESS = {
 
 export const DIFFERENTIATORS = {
   title: 'Precision, speed and security in one system',
-  lead: 'What sets Gewinode Raven apart from ordinary trading platforms.',
+  lead: 'What sets Nexora AI Platform apart from ordinary trading platforms.',
   items: [
     {
       icon: 'brain',
@@ -150,7 +150,7 @@ export const DIFFERENTIATORS = {
 
 export const INNOVATION = {
   title: 'Built by traders and engineers, guided by data',
-  lead: 'Gewinode Raven was founded in Sydney by a team of quantitative engineers and market veterans who believed trading should reward discipline, not screen time.',
+  lead: 'Nexora AI Platform was founded in Sydney by a team of quantitative engineers and market veterans who believed trading should reward discipline, not screen time.',
   points: [
     'A research-first culture: every feature ships only after it proves itself against live market data.',
     'Members first: transparent pricing, honest communication and support that actually responds.',
@@ -162,12 +162,12 @@ export const INNOVATION = {
 export const RATING = {
   score: '4.8',
   total: 1247,
-  note: 'Gewinode Raven is rated 4.8 out of 5 by members across Trustpilot-style review platforms, based on 1,247 verified reviews.',
+  note: 'Nexora AI Platform is rated 4.8 out of 5 by members across Trustpilot-style review platforms, based on 1,247 verified reviews.',
 };
 
 export const TESTIMONIALS = {
   title: 'Reviews from our members',
-  lead: 'Real experiences from people who trade with Gewinode Raven.',
+  lead: 'Real experiences from people who trade with Nexora AI Platform.',
   items: [
     {
       name: 'Oliver H.',
@@ -175,7 +175,7 @@ export const TESTIMONIALS = {
       tag: 'Verified user',
       stars: 5,
       quote:
-        'I was sceptical at first — I had been burned by a pushy broker before. Gewinode Raven felt different from the first week: no cold calls, no pressure, just a dashboard that quietly did its job. My first withdrawal arrived in under a day.',
+        'I was sceptical at first — I had been burned by a pushy broker before. Nexora AI Platform felt different from the first week: no cold calls, no pressure, just a dashboard that quietly did its job. My first withdrawal arrived in under a day.',
     },
     {
       name: 'Priya S.',
@@ -198,7 +198,7 @@ export const TESTIMONIALS = {
 
 export const PROMO = {
   title: 'Grow your portfolio with secure, data-led trading',
-  lead: 'Stop chasing trends. Let the Gewinode Raven engine turn market data into measured, repeatable growth — while 95% of funds rest safely in cold storage.',
+  lead: 'Stop chasing trends. Let the Nexora AI Platform engine turn market data into measured, repeatable growth — while 95% of funds rest safely in cold storage.',
   bullets: [
     'Automated strategies built around your goals',
     '85% execution accuracy on engine trades',
@@ -210,12 +210,12 @@ export const PROMO = {
 
 export const FAQS = [
   {
-    q: 'Is Gewinode Raven legitimate?',
-    a: 'Yes. Gewinode Raven operates as a technology services company serving verified residents of Australia, with a fully automated AI trading engine. We maintain transparent reporting, published reserve audits and a dedicated support team reachable at support@gewinoderaven.com. As with any trading, results are not guaranteed and capital is at risk.',
+    q: 'Is Nexora AI Platform legitimate?',
+    a: 'Yes. Nexora AI Platform operates as a technology services company serving verified residents of Australia, with a fully automated AI trading engine. We maintain transparent reporting, published reserve audits and a dedicated support team reachable at support@nexora-ai-platform.com. As with any trading, results are not guaranteed and capital is at risk.',
   },
   {
     q: 'What is the minimum deposit?',
-    a: 'The minimum deposit to activate your Gewinode Raven account is A$250. There are no deposit fees, and you can fund your account using major credit cards, bank transfer or PayPal. Your funds are applied to your trading balance as soon as the transfer clears.',
+    a: 'The minimum deposit to activate your Nexora AI Platform account is A$250. There are no deposit fees, and you can fund your account using major credit cards, bank transfer or PayPal. Your funds are applied to your trading balance as soon as the transfer clears.',
   },
   {
     q: 'How safe is my money?',
@@ -226,17 +226,17 @@ export const FAQS = [
     a: 'Withdrawals are requested from your dashboard with a single click. Most requests are processed within 24 hours and can be sent to the payment method you funded your account with — credit card, bank transfer or PayPal.',
   },
   {
-    q: 'Is Gewinode Raven regulated?',
-    a: 'Gewinode Raven operates under strict financial regulations and data privacy standards and complies with all applicable Australian requirements for technology service providers. Please note that we do not offer financial, investment or legal advice — the AI engine executes trades based on your chosen settings, and you remain responsible for your account.',
+    q: 'Is Nexora AI Platform regulated?',
+    a: 'Nexora AI Platform operates under strict financial regulations and data privacy standards and complies with all applicable Australian requirements for technology service providers. Please note that we do not offer financial, investment or legal advice — the AI engine executes trades based on your chosen settings, and you remain responsible for your account.',
   },
   {
     q: 'How do I avoid imitation sites?',
-    a: 'The only official domain for Gewinode Raven is gewinoderaven.com. We never contact you by phone or instant message asking for your password or for deposits to a personal account. If you receive a suspicious link claiming to be us, do not click it — report it to our support team instead.',
+    a: 'The only official domain for Nexora AI Platform is nexora-ai-platform.com. We never contact you by phone or instant message asking for your password or for deposits to a personal account. If you receive a suspicious link claiming to be us, do not click it — report it to our support team instead.',
   },
 ];
 
 export const CAPABILITIES = {
-  title: 'Key capabilities of the Gewinode Raven platform',
+  title: 'Key capabilities of the Nexora AI Platform platform',
   lead: 'Everything you need to trade intelligently, in one place.',
   items: [
     {
@@ -291,9 +291,9 @@ export const FINAL_CTA = {
 
 export const FOOTER = {
   blurb:
-    'Gewinode Raven is an AI-powered trading platform for verified residents of Australia. Smart algorithms, 95% cold storage and zero hidden fees.',
+    'Nexora AI Platform is an AI-powered trading platform for verified residents of Australia. Smart algorithms, 95% cold storage and zero hidden fees.',
   disclaimer:
-    'Trading foreign exchange, crypto and CFDs carries a high level of risk and may not be suitable for all investors. The value of investments can go down as well as up, and you may lose some or all of your capital. Past performance and accuracy claims are not indicative of future results. Gewinode Raven operates as a technology services company and does not offer financial, investment or legal advice. You should carefully consider your objectives and, if necessary, consult an independent financial adviser before investing. Registration is limited to verified residents of Australia.',
+    'Trading foreign exchange, crypto and CFDs carries a high level of risk and may not be suitable for all investors. The value of investments can go down as well as up, and you may lose some or all of your capital. Past performance and accuracy claims are not indicative of future results. Nexora AI Platform operates as a technology services company and does not offer financial, investment or legal advice. You should carefully consider your objectives and, if necessary, consult an independent financial adviser before investing. Registration is limited to verified residents of Australia.',
   legal: [
     { label: 'Terms of Use', to: '/terms-of-use' },
     { label: 'Privacy Policy', to: '/privacy-policy' },
@@ -329,12 +329,12 @@ export const BLOG_POSTS = [
 ];
 
 export const ABOUT = {
-  title: 'The team behind Gewinode Raven',
+  title: 'The team behind Nexora AI Platform',
   lead: 'We started with a simple frustration: trading platforms asked too much of ordinary people and gave too little back.',
   story: [
-    'Gewinode Raven was founded in Sydney in 2021 by a small team of quantitative engineers and market veterans. Between us we had spent decades building trading systems for institutions — systems that were fast, disciplined and brutally honest about risk. Yet the platforms available to everyday investors seemed designed to do the opposite: push emotional decisions, hide fees and leave people staring at screens at all hours.',
-    'We built Gewinode Raven to invert that model. Our AI engine does the analysis and execution, always explainable, always on. You set the goals and risk limits; the platform does the rest. And because trust is earned in the details, we publish our reserve audits, keep 95% of funds in cold storage and charge exactly zero hidden fees.',
-    'Today, more than 3.5 million members across 120+ countries trade with Gewinode Raven — and we are only getting started.',
+    'Nexora AI Platform was founded in Sydney in 2021 by a small team of quantitative engineers and market veterans. Between us we had spent decades building trading systems for institutions — systems that were fast, disciplined and brutally honest about risk. Yet the platforms available to everyday investors seemed designed to do the opposite: push emotional decisions, hide fees and leave people staring at screens at all hours.',
+    'We built Nexora AI Platform to invert that model. Our AI engine does the analysis and execution, always explainable, always on. You set the goals and risk limits; the platform does the rest. And because trust is earned in the details, we publish our reserve audits, keep 95% of funds in cold storage and charge exactly zero hidden fees.',
+    'Today, more than 3.5 million members across 120+ countries trade with Nexora AI Platform — and we are only getting started.',
   ],
   values: [
     {
@@ -362,8 +362,8 @@ export const ABOUT = {
 };
 
 export const PRODUCT = {
-  title: 'How Gewinode Raven works',
-  lead: 'Three steps stand between you and the Gewinode Raven trading engine — which never sleeps.',
+  title: 'How Nexora AI Platform works',
+  lead: 'Three steps stand between you and the Nexora AI Platform trading engine — which never sleeps.',
   steps: [
     {
       icon: 'user',
@@ -388,8 +388,8 @@ export const PRODUCT = {
 };
 
 export const WHY = {
-  title: 'Why invest with Gewinode Raven',
-  lead: 'Six reasons 3.5 million members chose Gewinode Raven over conventional trading.',
+  title: 'Why invest with Nexora AI Platform',
+  lead: 'Six reasons 3.5 million members chose Nexora AI Platform over conventional trading.',
   items: [
     {
       icon: 'bolt',
@@ -428,9 +428,9 @@ export const WHY = {
 };
 
 export const CONTACTS = {
-  title: 'Talk to the Gewinode Raven team',
-  lead: 'Questions about your Gewinode Raven account, the platform or anything else — we answer around the clock.',
-  email: 'support@gewinoderaven.com',
+  title: 'Talk to the Nexora AI Platform team',
+  lead: 'Questions about your Nexora AI Platform account, the platform or anything else — we answer around the clock.',
+  email: 'support@nexora-ai-platform.com',
   hours: '24/7, every day of the year',
   response: 'Average first response: under 5 minutes',
   note: 'For your security, we will never ask for your password or for payments to a personal account.',
@@ -439,15 +439,15 @@ export const CONTACTS = {
 export const LEGAL = {
   privacy: {
     title: 'Privacy Policy',
-    seoTitle: 'Gewinode Raven Privacy Policy | Your Data & Security',
+    seoTitle: 'Nexora AI Platform Privacy Policy | Your Data & Security',
     description:
-      'How Gewinode Raven collects, uses and protects your personal information on our AI-powered trading platform.',
-    keywords: ['Gewinode Raven privacy policy', 'trading platform privacy', 'data protection Australia'],
+      'How Nexora AI Platform collects, uses and protects your personal information on our AI-powered trading platform.',
+    keywords: ['Nexora AI Platform privacy policy', 'trading platform privacy', 'data protection Australia'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
         h: '1. Who we are',
-        p: 'Gewinode Raven ("we", "us", "our") operates the website gewinoderaven.com and the trading platform available through it. This policy explains how we collect, use and protect your personal information when you visit our site or use our services.',
+        p: 'Nexora AI Platform ("we", "us", "our") operates the website nexora-ai-platform.com and the trading platform available through it. This policy explains how we collect, use and protect your personal information when you visit our site or use our services.',
       },
       {
         h: '2. Information we collect',
@@ -467,25 +467,25 @@ export const LEGAL = {
       },
       {
         h: '6. Your rights',
-        p: 'Under the Australian Privacy Act 1988 (Cth) you may request access to, correction of, or deletion of your personal data, and you may object to certain processing. To exercise any of these rights, contact support@gewinoderaven.com.',
+        p: 'Under the Australian Privacy Act 1988 (Cth) you may request access to, correction of, or deletion of your personal data, and you may object to certain processing. To exercise any of these rights, contact support@nexora-ai-platform.com.',
       },
       {
         h: '7. Contact',
-        p: 'For any privacy-related question or request, email support@gewinoderaven.com. We aim to respond to all requests within 5 working days.',
+        p: 'For any privacy-related question or request, email support@nexora-ai-platform.com. We aim to respond to all requests within 5 working days.',
       },
     ],
   },
   terms: {
     title: 'Terms of Use',
-    seoTitle: 'Gewinode Raven Terms of Use | Trading Conditions',
+    seoTitle: 'Nexora AI Platform Terms of Use | Trading Conditions',
     description:
-      'The terms and conditions that govern your use of the Gewinode Raven trading platform and website.',
-    keywords: ['Gewinode Raven terms of use', 'trading platform terms', 'Gewinode Raven conditions'],
+      'The terms and conditions that govern your use of the Nexora AI Platform trading platform and website.',
+    keywords: ['Nexora AI Platform terms of use', 'trading platform terms', 'Nexora AI Platform conditions'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
         h: '1. Acceptance of these terms',
-        p: 'By accessing gewinoderaven.com or registering an account, you agree to be bound by these Terms of Use. If you do not agree, please do not use the platform.',
+        p: 'By accessing nexora-ai-platform.com or registering an account, you agree to be bound by these Terms of Use. If you do not agree, please do not use the platform.',
       },
       {
         h: '2. Eligibility',
@@ -493,11 +493,11 @@ export const LEGAL = {
       },
       {
         h: '3. The service',
-        p: 'Gewinode Raven provides a technology platform with an automated AI trading engine. The engine executes trades according to the settings you configure. We do not provide financial, investment or legal advice, and nothing on this site should be read as such.',
+        p: 'Nexora AI Platform provides a technology platform with an automated AI trading engine. The engine executes trades according to the settings you configure. We do not provide financial, investment or legal advice, and nothing on this site should be read as such.',
       },
       {
         h: '4. Your account',
-        p: 'You are responsible for keeping your login credentials confidential and for all activity on your account. Notify us immediately at support@gewinoderaven.com if you suspect unauthorised access.',
+        p: 'You are responsible for keeping your login credentials confidential and for all activity on your account. Notify us immediately at support@nexora-ai-platform.com if you suspect unauthorised access.',
       },
       {
         h: '5. Risk acknowledgement',
@@ -509,7 +509,7 @@ export const LEGAL = {
       },
       {
         h: '7. Limitation of liability',
-        p: 'To the maximum extent permitted by law, Gewinode Raven is not liable for trading losses, indirect losses or losses arising from market conditions. Nothing in these terms limits liability that cannot be limited under applicable law.',
+        p: 'To the maximum extent permitted by law, Nexora AI Platform is not liable for trading losses, indirect losses or losses arising from market conditions. Nothing in these terms limits liability that cannot be limited under applicable law.',
       },
       {
         h: '8. Changes to these terms',
@@ -517,16 +517,16 @@ export const LEGAL = {
       },
       {
         h: '9. Contact',
-        p: 'Questions about these terms can be sent to support@gewinoderaven.com.',
+        p: 'Questions about these terms can be sent to support@nexora-ai-platform.com.',
       },
     ],
   },
   risk: {
     title: 'Risk Disclosure',
-    seoTitle: 'Gewinode Raven Risk Disclosure | Trading Risks Explained',
+    seoTitle: 'Nexora AI Platform Risk Disclosure | Trading Risks Explained',
     description:
-      'Understand the risks before trading with Gewinode Raven. Trading carries a high level of risk and may not suit all investors.',
-    keywords: ['Gewinode Raven risk disclosure', 'trading risk warning', 'investment risk Australia'],
+      'Understand the risks before trading with Nexora AI Platform. Trading carries a high level of risk and may not suit all investors.',
+    keywords: ['Nexora AI Platform risk disclosure', 'trading risk warning', 'investment risk Australia'],
     updated: 'Last updated: 1 September 2026',
     sections: [
       {
@@ -547,7 +547,7 @@ export const LEGAL = {
       },
       {
         h: '5. No advice',
-        p: 'Gewinode Raven operates as a technology services company and does not offer financial, investment, legal or tax advice. If you are unsure whether trading is appropriate for you, consult an independent financial adviser.',
+        p: 'Nexora AI Platform operates as a technology services company and does not offer financial, investment, legal or tax advice. If you are unsure whether trading is appropriate for you, consult an independent financial adviser.',
       },
       {
         h: '6. Your responsibility',

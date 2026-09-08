@@ -5,12 +5,12 @@ import { BLOG_POSTS } from '../data/content.js';
 
 export default function Blog() {
   useMeta({
-    title: 'Gewinode Raven Blog | AI Trading Insights & Guides',
+    title: 'Nexora AI Platform Blog | AI Trading Insights & Guides',
     description:
-      'Insights from the Gewinode Raven team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
+      'Insights from the Nexora AI Platform team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
     path: '/blog',
     keywords: [
-      'Gewinode Raven blog',
+      'Nexora AI Platform blog',
       'AI trading insights',
       'trading education',
       'cold storage explained',
@@ -22,7 +22,7 @@ export default function Blog() {
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">
-          <h1 className="section-title">The Gewinode Raven blog</h1>
+          <h1 className="section-title">The Nexora AI Platform blog</h1>
           <p className="section-lead">
             Short, honest reads about AI trading, security and investing well.
           </p>

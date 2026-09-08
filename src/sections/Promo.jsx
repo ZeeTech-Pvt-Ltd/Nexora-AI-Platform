@@ -20,9 +20,9 @@ export default function Promo() {
               {PROMO.bullets.map((b) => (
                 <li
                   key={b}
-                  style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#f5efe8', fontSize: 15 }}
+                  style={{ display: 'flex', gap: 12, alignItems: 'flex-start', color: '#211a10', fontSize: 15 }}
                 >
-                  <Icon name="check" size={18} style={{ color: '#4ade80', flexShrink: 0, marginTop: 3 }} />
+                  <Icon name="check" size={18} style={{ color: '#16a34a', flexShrink: 0, marginTop: 3 }} />
                   {b}
                 </li>
               ))}
@@ -41,19 +41,19 @@ export default function Promo() {
             >
               <defs>
                 <linearGradient id="promo-line" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stopColor="#ea580c" />
-                  <stop offset="1" stopColor="#fbbf24" />
+                  <stop offset="0" stopColor="#d97706" />
+                  <stop offset="1" stopColor="#ea580c" />
                 </linearGradient>
                 <linearGradient id="promo-fill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stopColor="rgba(249,115,22,0.25)" />
-                  <stop offset="1" stopColor="rgba(249,115,22,0)" />
+                  <stop offset="0" stopColor="rgba(217,119,6,0.25)" />
+                  <stop offset="1" stopColor="rgba(52,211,153,0)" />
                 </linearGradient>
               </defs>
               {[70, 130, 190, 250].map((y) => (
-                <line key={y} x1="0" y1={y} x2="520" y2={y} stroke="#2b251f" />
+                <line key={y} x1="0" y1={y} x2="520" y2={y} stroke="#e8e2d5" />
               ))}
               {[86, 173, 260, 346, 433].map((x) => (
-                <line key={x} x1={x} y1="30" x2={x} y2="290" stroke="#2b251f" />
+                <line key={x} x1={x} y1="30" x2={x} y2="290" stroke="#e8e2d5" />
               ))}
               <path
                 d="M20 250 L86 210 L152 232 L218 160 L284 184 L350 120 L416 146 L500 64 L500 290 L20 290 Z"
@@ -66,9 +66,9 @@ export default function Promo() {
                 strokeWidth="3"
                 strokeLinecap="round"
               />
-              <circle cx="350" cy="120" r="5" fill="#fbbf24" />
-              <rect x="338" y="66" width="76" height="28" rx="6" fill="#211c17" stroke="#39312a" />
-              <text x="352" y="85" fontFamily="'IBM Plex Mono', monospace" fontSize="12" fill="#4ade80">
+              <circle cx="350" cy="120" r="5" fill="#f59e0b" />
+              <rect x="338" y="66" width="76" height="28" rx="6" fill="#ffffff" stroke="#d8cfc0" />
+              <text x="352" y="85" fontFamily="'IBM Plex Mono', monospace" fontSize="12" fill="#16a34a">
                 +12.4%
               </text>
             </svg>

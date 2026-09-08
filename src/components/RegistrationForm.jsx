@@ -23,10 +23,20 @@ export default function RegistrationForm({
   const [formError, setFormError] = useState('');
   const [success, setSuccess] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  // Checked by default, but still enforced: unchecking it blocks submit.
   const [agreed, setAgreed] = useState(true);
   const [phoneCountry, setPhoneCountry] = useState(null);
 
   const fid = (name) => `${idPrefix}-${name}`;
+
+  // Dismiss a field's error as soon as the user edits it.
+  const clearError = (field) =>
+    setErrors((prev) => {
+      if (!prev[field]) return prev;
+      const next = { ...prev };
+      delete next[field];
+      return next;
+    });
 
   useEffect(() => {
     const input = phoneRef.current;
@@ -106,13 +116,15 @@ export default function RegistrationForm({
     // Honeypot — bots fill it, humans never see it.
     if (data.website) return;
 
-    // Phone: full validation once utils are loaded; raw sanity check otherwise.
+    // Phone: strict validation once utils are loaded; digit-count sanity check otherwise.
     let phone = data.phone.trim();
     const iti = itiRef.current;
+    let utilsReady = false;
+    let valid = false;
     if (iti) {
-      let valid = false;
       try {
         valid = iti.isValidNumber();
+        utilsReady = true;
       } catch {
         // v29's ensureUtils throws until utils are attached — wait briefly, then retry.
         await Promise.race([
@@ -121,17 +133,20 @@ export default function RegistrationForm({
         ]);
         try {
           valid = iti.isValidNumber();
+          utilsReady = true;
         } catch {
-          valid = false;
+          utilsReady = false;
         }
       }
-      if (valid) {
-        phone = iti.getNumber();
-      } else if (phone.replace(/\D/g, '').length < 7) {
-        errs.phone = 'Enter a valid phone number';
-      }
-    } else if (phone.replace(/\D/g, '').length < 7) {
+    }
+
+    const digits = phone.replace(/\D/g, '');
+    if (!digits) {
+      errs.phone = 'Enter your phone number';
+    } else if (utilsReady ? !valid : digits.length < 7) {
       errs.phone = 'Enter a valid phone number';
+    } else if (valid) {
+      phone = iti.getNumber();
     }
 
     if (showConsent && !agreed) {
@@ -157,13 +172,15 @@ export default function RegistrationForm({
           phone,
         }),
       });
-      if (!res.ok) {
+      // The endpoint answers 200 even for failures and reports them in the body.
+      const payload = await res.json().catch(() => null);
+      const msg = (payload?.message || '').replace(/\s*\(#\w+\)\s*$/i, '').trim();
+      if (!res.ok || payload?.status === 'error') {
         // The endpoint rate-limits 3 attempts per 5 minutes per IP.
-        const msg = await res.text().catch(() => '');
         throw new Error(
           res.status === 429 || /limit|many|attempt/i.test(msg)
             ? 'Too many attempts — please wait a few minutes and try again.'
-            : 'Something went wrong on our side. Please try again in a moment.'
+            : msg || 'Something went wrong on our side. Please try again in a moment.'
         );
       }
       setSuccess('Account request received — redirecting…');
@@ -203,6 +220,7 @@ export default function RegistrationForm({
             type="text"
             placeholder="Oliver"
             autoComplete="given-name"
+            onChange={() => clearError('firstName')}
             className={errors.firstName ? 'input-error' : ''}
           />
           {errors.firstName && <span className="error-text">{errors.firstName}</span>}
@@ -215,6 +233,7 @@ export default function RegistrationForm({
             type="text"
             placeholder="Hartley"
             autoComplete="family-name"
+            onChange={() => clearError('lastName')}
             className={errors.lastName ? 'input-error' : ''}
           />
           {errors.lastName && <span className="error-text">{errors.lastName}</span>}
@@ -229,6 +248,7 @@ export default function RegistrationForm({
           type="email"
           placeholder="oliver@example.com"
           autoComplete="email"
+          onChange={() => clearError('email')}
           className={errors.email ? 'input-error' : ''}
         />
         {errors.email && <span className="error-text">{errors.email}</span>}
@@ -244,6 +264,7 @@ export default function RegistrationForm({
           name="phone"
           type="tel"
           autoComplete="tel"
+          onChange={() => clearError('phone')}
           className={errors.phone ? 'input-error' : ''}
         />
         {errors.phone && <span className="error-text">{errors.phone}</span>}
@@ -255,15 +276,18 @@ export default function RegistrationForm({
             <input
               type="checkbox"
               checked={agreed}
-              onChange={(e) => setAgreed(e.target.checked)}
+              onChange={(e) => {
+                setAgreed(e.target.checked);
+                clearError('consent');
+              }}
             />
             <span>
               I agree to the{' '}
-              <Link to="/terms-of-use" style={{ color: '#ff8a3d', textDecoration: 'underline' }}>
+              <Link to="/terms-of-use" style={{ color: '#b45309', textDecoration: 'underline' }}>
                 Terms of Use
               </Link>{' '}
               and{' '}
-              <Link to="/privacy-policy" style={{ color: '#ff8a3d', textDecoration: 'underline' }}>
+              <Link to="/privacy-policy" style={{ color: '#b45309', textDecoration: 'underline' }}>
                 Privacy Policy
               </Link>
               .

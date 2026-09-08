@@ -4,15 +4,15 @@ import { SITE } from '../data/content.js';
 
 export default function SignUp() {
   useMeta({
-    title: 'Sign Up | Open a Gewinode Raven Account Today',
+    title: 'Sign Up | Open a Nexora AI Platform Account Today',
     description:
-      'Open your Gewinode Raven trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
+      'Open your Nexora AI Platform trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
     path: '/sign-up',
     keywords: [
-      'Gewinode Raven sign up',
+      'Nexora AI Platform sign up',
       'open trading account Australia',
       'AI trading registration',
-      'Gewinode Raven register',
+      'Nexora AI Platform register',
     ],
   });
 
@@ -23,7 +23,7 @@ export default function SignUp() {
       </div>
       <div className="container" style={{ maxWidth: 520 }}>
         <h1 className="section-title" style={{ textAlign: 'center', fontSize: 28, marginBottom: 32 }}>
-          Open your Gewinode Raven account
+          Open your Nexora AI Platform account
         </h1>
         <div className="terminal">
           <div className="terminal__bar">
@@ -32,7 +32,7 @@ export default function SignUp() {
               <span className="t--a" />
               <span className="t--g" />
             </span>
-            gewinode-raven — sign up
+            nexora-ai-platform — sign up
           </div>
           <div className="terminal__body">
             <RegistrationForm idPrefix="signup" />

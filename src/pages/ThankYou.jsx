@@ -5,11 +5,11 @@ import useMeta from '../hooks/useMeta.js';
 
 export default function ThankYou() {
   useMeta({
-    title: 'Thank You | Gewinode Raven Registration Received',
+    title: 'Thank You | Nexora AI Platform Registration Received',
     description:
-      'Your Gewinode Raven registration has been received. Our team will contact you shortly to complete your account setup.',
+      'Your Nexora AI Platform registration has been received. Our team will contact you shortly to complete your account setup.',
     path: '/thank-you',
-    keywords: ['Gewinode Raven registration', 'Gewinode Raven account confirmation'],
+    keywords: ['Nexora AI Platform registration', 'Nexora AI Platform account confirmation'],
   });
 
   return (
@@ -25,7 +25,7 @@ export default function ThankYou() {
           <h1 className="section-title">Thank you — we have your details</h1>
           <p className="section-lead" style={{ margin: '16px auto 32px' }}>
             Our team will contact you shortly at the details you provided to complete your
-            Gewinode Raven account. Please keep your phone nearby.
+            Nexora AI Platform account. Please keep your phone nearby.
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link className="btn btn--ember" to="/">
