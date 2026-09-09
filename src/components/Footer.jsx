@@ -49,10 +49,6 @@ export default function Footer() {
                 <Icon name="headset" size={16} />
                 24/7 human &amp; AI support
               </li>
-              <li>
-                <Icon name="globe" size={16} />
-                nexora-ai-platform.com — the only official domain
-              </li>
             </ul>
           </div>
         </div>
