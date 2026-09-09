@@ -63,7 +63,9 @@ export default function RegistrationForm({
     });
     itiRef.current = iti;
 
-    // Warm up the validators on first focus or after 4s idle — whichever comes first.
+    // Warm up the validators on first focus or first pointer interaction with the
+    // form. No idle timer: parsing the ~265KB utils chunk on a 4s timer showed up
+    // as Total Blocking Time on mobile Lighthouse runs.
     const warm = () => {
       if (utilsDeferred.current) return;
       let resolveDeferred;
@@ -80,7 +82,12 @@ export default function RegistrationForm({
       input.removeEventListener('focus', onFocus);
     };
     input.addEventListener('focus', onFocus);
-    const timer = setTimeout(warm, 4000);
+    const form = input.closest('form');
+    const onPointer = () => {
+      warm();
+      form?.removeEventListener('pointerdown', onPointer);
+    };
+    form?.addEventListener('pointerdown', onPointer);
 
     // Keep the phone label in sync with the selected country (flag + dial code).
     const onCountryChange = (e) => {
@@ -92,7 +99,7 @@ export default function RegistrationForm({
     return () => {
       input.removeEventListener('focus', onFocus);
       input.removeEventListener('countrychange', onCountryChange);
-      clearTimeout(timer);
+      form?.removeEventListener('pointerdown', onPointer);
       iti.destroy();
       itiRef.current = null;
       utilsDeferred.current = null;
