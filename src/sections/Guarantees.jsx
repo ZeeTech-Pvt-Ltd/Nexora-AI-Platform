@@ -17,7 +17,7 @@ export default function Guarantees() {
               className="card guarantee"
               delay={i * 90}
               key={g.title}
-              aria-label={`${g.title}: ${g.text} — Register now`}
+              aria-label={`${g.title}: ${g.text} - Register now`}
             >
               <div className="card__icon" style={{ margin: '0 auto 18px' }}>
                 <Icon name={g.icon} size={24} />

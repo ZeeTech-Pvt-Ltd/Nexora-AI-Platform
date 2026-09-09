@@ -120,7 +120,7 @@ export default function RegistrationForm({
       errs.email = 'Enter a valid email address';
     }
 
-    // Honeypot — bots fill it, humans never see it.
+    // Honeypot - bots fill it, humans never see it.
     if (data.website) return;
 
     // Phone: strict validation once utils are loaded; digit-count sanity check otherwise.
@@ -133,7 +133,7 @@ export default function RegistrationForm({
         valid = iti.isValidNumber();
         utilsReady = true;
       } catch {
-        // v29's ensureUtils throws until utils are attached — wait briefly, then retry.
+        // v29's ensureUtils throws until utils are attached - wait briefly, then retry.
         await Promise.race([
           utilsDeferred.current || Promise.resolve(),
           new Promise((r) => setTimeout(r, 3000)),
@@ -186,11 +186,11 @@ export default function RegistrationForm({
         // The endpoint rate-limits 3 attempts per 5 minutes per IP.
         throw new Error(
           res.status === 429 || /limit|many|attempt/i.test(msg)
-            ? 'Too many attempts — please wait a few minutes and try again.'
+            ? 'Too many attempts - please wait a few minutes and try again.'
             : msg || 'Something went wrong on our side. Please try again in a moment.'
         );
       }
-      setSuccess('Account request received — redirecting…');
+      setSuccess('Account request received - redirecting…');
       setTimeout(() => navigate('/thank-you'), 600);
     } catch (err) {
       setFormError(err.message || 'Something went wrong. Please try again.');
@@ -215,7 +215,7 @@ export default function RegistrationForm({
         </div>
       )}
 
-      {/* Honeypot field — hidden from humans */}
+      {/* Honeypot field - hidden from humans */}
       <input className="form__honey" type="text" name="website" tabIndex={-1} autoComplete="off" />
 
       <div className="form__row">

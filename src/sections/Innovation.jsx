@@ -45,7 +45,7 @@ export default function Innovation() {
                   <span className="t--a" />
                   <span className="t--g" />
                 </span>
-                engine — weekly report
+                engine - weekly report
               </div>
               <div className="terminal__body">
                 <div className="readout__row" style={{ marginBottom: 10 }}>

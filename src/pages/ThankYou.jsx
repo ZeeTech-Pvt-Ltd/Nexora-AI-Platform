@@ -22,7 +22,7 @@ export default function ThankYou() {
           >
             <Icon name="check" size={34} />
           </div>
-          <h1 className="section-title">Thank you — we have your details</h1>
+          <h1 className="section-title">Thank you - we have your details</h1>
           <p className="section-lead" style={{ margin: '16px auto 32px' }}>
             Our team will contact you shortly at the details you provided to complete your
             Nexora AI Platform account. Please keep your phone nearby.

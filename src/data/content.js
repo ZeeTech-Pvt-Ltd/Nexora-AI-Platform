@@ -1,4 +1,4 @@
-// All site copy for Nexora AI Platform — single source of truth.
+// All site copy for Nexora AI Platform - single source of truth.
 // Keyword: Nexora AI Platform. Target market: Australia.
 
 export const SITE = {
@@ -23,13 +23,13 @@ export const HERO = {
   kicker: 'Live · Engine online · AU verified',
   titleLines: ['Nexora AI Platform puts', 'AI-powered precision behind every trade'],
   // Rendered as: Nexora AI Platform (ember gradient) puts AI-powered precision behind every trade
-  sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence — without staring at charts all day.',
+  sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence - without staring at charts all day.',
   ctaPrimary: { label: 'Register Now', to: '/sign-up' },
   ctaSecondary: { label: 'See how it works', to: '/how-it-works' },
   steps: [
     'Register in 2 minutes',
     'Verify as an Australian resident',
-    'Fund from A$250 — the engine starts trading',
+    'Fund from A$250 - the engine starts trading',
   ],
   trust: ['2FA & 256-bit SSL', '95% cold storage', '24/7 support'],
 };
@@ -59,7 +59,7 @@ export const FEATURES = {
     {
       icon: 'cpu',
       title: 'Advanced AI Technologies',
-      text: 'Deep-learning models scan price movements, news flow and order books in real time — far beyond what any single trader could track.',
+      text: 'Deep-learning models scan price movements, news flow and order books in real time - far beyond what any single trader could track.',
     },
     {
       icon: 'engine',
@@ -69,7 +69,7 @@ export const FEATURES = {
     {
       icon: 'invest',
       title: 'Simple, Clear Investments',
-      text: 'One clean dashboard shows your positions, performance and balance. No jargon, no clutter — just the numbers that matter.',
+      text: 'One clean dashboard shows your positions, performance and balance. No jargon, no clutter - just the numbers that matter.',
     },
     {
       icon: 'shield-check',
@@ -111,7 +111,7 @@ export const EFFORTLESS = {
     {
       icon: 'sliders',
       title: 'Automated Trading Tailored to You',
-      text: 'Set your goals, risk appetite and preferred markets once — the engine then builds and runs a strategy that fits you, adjusting as conditions change.',
+      text: 'Set your goals, risk appetite and preferred markets once - the engine then builds and runs a strategy that fits you, adjusting as conditions change.',
     },
     {
       icon: 'bolt',
@@ -143,7 +143,7 @@ export const DIFFERENTIATORS = {
     {
       icon: 'chart',
       title: 'Data-Led Insights',
-      text: 'Every decision the engine makes is backed by measurable market data — and every insight is shown to you in plain English.',
+      text: 'Every decision the engine makes is backed by measurable market data - and every insight is shown to you in plain English.',
     },
   ],
 };
@@ -175,7 +175,7 @@ export const TESTIMONIALS = {
       tag: 'Verified user',
       stars: 5,
       quote:
-        'I was sceptical at first — I had been burned by a pushy broker before. Nexora AI Platform felt different from the first week: no cold calls, no pressure, just a dashboard that quietly did its job. My first withdrawal arrived in under a day.',
+        'I was sceptical at first - I had been burned by a pushy broker before. Nexora AI Platform felt different from the first week: no cold calls, no pressure, just a dashboard that quietly did its job. My first withdrawal arrived in under a day.',
     },
     {
       name: 'Priya S.',
@@ -198,7 +198,7 @@ export const TESTIMONIALS = {
 
 export const PROMO = {
   title: 'Grow your portfolio with secure, data-led trading',
-  lead: 'Stop chasing trends. Let the Nexora AI Platform engine turn market data into measured, repeatable growth — while 95% of funds rest safely in cold storage.',
+  lead: 'Stop chasing trends. Let the Nexora AI Platform engine turn market data into measured, repeatable growth - while 95% of funds rest safely in cold storage.',
   bullets: [
     'Automated strategies built around your goals',
     '85% execution accuracy on engine trades',
@@ -219,19 +219,19 @@ export const FAQS = [
   },
   {
     q: 'How safe is my money?',
-    a: '95% of customer funds are held in cold storage — offline wallets that cannot be reached by online attackers. Your account is additionally protected by two-factor authentication and 256-bit SSL encryption, and our reserves are audited on a live, published basis.',
+    a: '95% of customer funds are held in cold storage - offline wallets that cannot be reached by online attackers. Your account is additionally protected by two-factor authentication and 256-bit SSL encryption, and our reserves are audited on a live, published basis.',
   },
   {
     q: 'How do withdrawals work?',
-    a: 'Withdrawals are requested from your dashboard with a single click. Most requests are processed within 24 hours and can be sent to the payment method you funded your account with — credit card, bank transfer or PayPal.',
+    a: 'Withdrawals are requested from your dashboard with a single click. Most requests are processed within 24 hours and can be sent to the payment method you funded your account with - credit card, bank transfer or PayPal.',
   },
   {
     q: 'Is Nexora AI Platform regulated?',
-    a: 'Nexora AI Platform operates under strict financial regulations and data privacy standards and complies with all applicable Australian requirements for technology service providers. Please note that we do not offer financial, investment or legal advice — the AI engine executes trades based on your chosen settings, and you remain responsible for your account.',
+    a: 'Nexora AI Platform operates under strict financial regulations and data privacy standards and complies with all applicable Australian requirements for technology service providers. Please note that we do not offer financial, investment or legal advice - the AI engine executes trades based on your chosen settings, and you remain responsible for your account.',
   },
   {
     q: 'How do I avoid imitation sites?',
-    a: 'The only official domain for Nexora AI Platform is nexora-ai-platform.com. We never contact you by phone or instant message asking for your password or for deposits to a personal account. If you receive a suspicious link claiming to be us, do not click it — report it to our support team instead.',
+    a: 'The only official domain for Nexora AI Platform is nexora-ai-platform.com. We never contact you by phone or instant message asking for your password or for deposits to a personal account. If you receive a suspicious link claiming to be us, do not click it - report it to our support team instead.',
   },
 ];
 
@@ -267,7 +267,7 @@ export const CAPABILITIES = {
     {
       icon: 'clock',
       title: 'Account Setup in Minutes',
-      text: 'Register, verify and fund — usually within ten minutes.',
+      text: 'Register, verify and fund - usually within ten minutes.',
     },
     {
       icon: 'headset',
@@ -284,7 +284,7 @@ export const CAPABILITIES = {
 
 export const FINAL_CTA = {
   title: 'Ready to trade with intelligence?',
-  lead: 'Join 3.5 million members who let data do the heavy lifting. Your account takes minutes to open — your engine starts working the moment you fund it.',
+  lead: 'Join 3.5 million members who let data do the heavy lifting. Your account takes minutes to open - your engine starts working the moment you fund it.',
   cta: { label: 'Register Now', to: '/sign-up' },
   note: 'Registration is limited to verified residents of Australia.',
 };
@@ -308,7 +308,7 @@ export const BLOG_POSTS = [
     readTime: '4 min read',
     title: 'How AI reads the market: signals, patterns and speed',
     excerpt:
-      'A plain-English look at the three layers of market data our engine analyses every second — and why speed is only half the story.',
+      'A plain-English look at the three layers of market data our engine analyses every second - and why speed is only half the story.',
   },
   {
     slug: 'cold-storage-explained',
@@ -324,7 +324,7 @@ export const BLOG_POSTS = [
     readTime: '5 min read',
     title: 'Three habits of calm, consistent investors',
     excerpt:
-      'The investors who sleep well share three simple habits — none of which involve refreshing price charts at 2am.',
+      'The investors who sleep well share three simple habits - none of which involve refreshing price charts at 2am.',
   },
 ];
 
@@ -332,9 +332,9 @@ export const ABOUT = {
   title: 'The team behind Nexora AI Platform',
   lead: 'We started with a simple frustration: trading platforms asked too much of ordinary people and gave too little back.',
   story: [
-    'Nexora AI Platform was founded in Sydney in 2021 by a small team of quantitative engineers and market veterans. Between us we had spent decades building trading systems for institutions — systems that were fast, disciplined and brutally honest about risk. Yet the platforms available to everyday investors seemed designed to do the opposite: push emotional decisions, hide fees and leave people staring at screens at all hours.',
+    'Nexora AI Platform was founded in Sydney in 2021 by a small team of quantitative engineers and market veterans. Between us we had spent decades building trading systems for institutions - systems that were fast, disciplined and brutally honest about risk. Yet the platforms available to everyday investors seemed designed to do the opposite: push emotional decisions, hide fees and leave people staring at screens at all hours.',
     'We built Nexora AI Platform to invert that model. Our AI engine does the analysis and execution, always explainable, always on. You set the goals and risk limits; the platform does the rest. And because trust is earned in the details, we publish our reserve audits, keep 95% of funds in cold storage and charge exactly zero hidden fees.',
-    'Today, more than 3.5 million members across 120+ countries trade with Nexora AI Platform — and we are only getting started.',
+    'Today, more than 3.5 million members across 120+ countries trade with Nexora AI Platform - and we are only getting started.',
   ],
   values: [
     {
@@ -350,7 +350,7 @@ export const ABOUT = {
     {
       icon: 'shield-check',
       title: 'Stewardship',
-      text: 'We treat your capital as if it were our own — because our reputation depends on exactly that.',
+      text: 'We treat your capital as if it were our own - because our reputation depends on exactly that.',
     },
   ],
   difference: [
@@ -363,7 +363,7 @@ export const ABOUT = {
 
 export const PRODUCT = {
   title: 'How Nexora AI Platform works',
-  lead: 'Three steps stand between you and the Nexora AI Platform trading engine — which never sleeps.',
+  lead: 'Three steps stand between you and the Nexora AI Platform trading engine - which never sleeps.',
   steps: [
     {
       icon: 'user',
@@ -399,7 +399,7 @@ export const WHY = {
     {
       icon: 'target',
       title: '85% execution accuracy',
-      text: 'The engine enters positions only when its models rate the setup favourable — averaging 85% accuracy across all trades.',
+      text: 'The engine enters positions only when its models rate the setup favourable - averaging 85% accuracy across all trades.',
     },
     {
       icon: 'shield-check',
@@ -409,7 +409,7 @@ export const WHY = {
     {
       icon: 'eye',
       title: 'Radical transparency',
-      text: 'Zero hidden fees, published reserve audits and a full log of every trade — with the reasoning behind it.',
+      text: 'Zero hidden fees, published reserve audits and a full log of every trade - with the reasoning behind it.',
     },
     {
       icon: 'clock',
@@ -429,7 +429,7 @@ export const WHY = {
 
 export const CONTACTS = {
   title: 'Talk to the Nexora AI Platform team',
-  lead: 'Questions about your Nexora AI Platform account, the platform or anything else — we answer around the clock.',
+  lead: 'Questions about your Nexora AI Platform account, the platform or anything else - we answer around the clock.',
   email: 'support@nexora-ai-platform.com',
   hours: '24/7, every day of the year',
   response: 'Average first response: under 5 minutes',

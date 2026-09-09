@@ -1,6 +1,6 @@
 import { FAQS } from '../data/content.js';
 
-// FAQPage structured data — makes the FAQ eligible for Google rich results.
+// FAQPage structured data - makes the FAQ eligible for Google rich results.
 export default function FaqSchema() {
   const schema = {
     '@context': 'https://schema.org',

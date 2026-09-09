@@ -4,7 +4,7 @@ import Hero from '../sections/Hero.jsx';
 import LazySection from '../components/LazySection.jsx';
 
 // Below-fold sections are split into their own chunks and download only as the
-// user scrolls near them — keeps the initial mobile parse to just the hero.
+// user scrolls near them - keeps the initial mobile parse to just the hero.
 const LiveTicker = lazy(() => import('../sections/LiveTicker.jsx'));
 const StatsBand = lazy(() => import('../sections/StatsBand.jsx'));
 const Features = lazy(() => import('../sections/Features.jsx'));

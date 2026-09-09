@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <section className="section section--deep">
       <div className="container coming-soon">
-        <span className="code">// error 404 — signal lost</span>
+        <span className="code">// error 404 - signal lost</span>
         <h1 className="section-title">This page does not exist</h1>
         <p className="section-lead" style={{ maxWidth: 460, margin: '16px auto 32px' }}>
           The link may be broken, or the page may have moved. Let's get you back on track.

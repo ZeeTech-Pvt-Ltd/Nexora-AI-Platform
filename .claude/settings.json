@@ -54,7 +54,9 @@
       "Read(//c/Program Files \\\\\\(x86\\\\\\)/Google/Chrome/Application/**)",
       "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
       "Bash(npx -y lighthouse \"https://nexora-ai-platform.com/\" --only-categories=performance --form-factor=mobile --screenEmulation.mobile=true --throttling-method=simulate --output=json --output-path=./lh.json --chrome-flags=\"--headless=new\" --quiet)",
-      "Bash(curl -s \"https://nexora-ai-platform.com/\")"
+      "Bash(curl -s \"https://nexora-ai-platform.com/\")",
+      "Bash(xargs sed -i 's/—/-/g')",
+      "Bash(echo \"remaining: $?\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\samee\\AppData\\Local\\Temp"

@@ -4,7 +4,7 @@ import useMeta from '../hooks/useMeta.js';
 export default function ComingSoon({ title }) {
   useMeta({
     title: `${title} | Nexora AI Platform`,
-    description: `${title} — coming soon on the Nexora AI Platform platform.`,
+    description: `${title} - coming soon on the Nexora AI Platform platform.`,
     path: `/${title.toLowerCase().replace(/\s+/g, '-')}`,
   });
 

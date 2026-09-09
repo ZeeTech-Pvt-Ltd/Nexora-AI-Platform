@@ -80,7 +80,7 @@ export default function Hero() {
                 <span className="t--a" />
                 <span className="t--g" />
               </span>
-              nexora-ai-platform — register
+              nexora-ai-platform - register
             </div>
             <div className="terminal__body">
               <Suspense fallback={<FormSkeleton />}>

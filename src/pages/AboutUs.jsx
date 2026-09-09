@@ -85,7 +85,7 @@ export default function AboutUs() {
                     <span className="t--a" />
                     <span className="t--g" />
                   </span>
-                  about — nexora ai platform
+                  about - nexora ai platform
                 </div>
                 <div className="terminal__body">
                   <div className="readout__row" style={{ marginBottom: 10 }}>

@@ -74,7 +74,7 @@ export default function Contacts() {
                   <RegistrationForm
                     idPrefix="contact"
                     title="Request a callback"
-                    subtitle="Leave your details and a member of our Australian team will call you back — usually within the hour."
+                    subtitle="Leave your details and a member of our Australian team will call you back - usually within the hour."
                     buttonLabel="Request a Callback"
                   />
                 </div>

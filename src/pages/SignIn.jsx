@@ -26,7 +26,7 @@ export default function SignIn() {
               <span className="t--a" />
               <span className="t--g" />
             </span>
-            nexora-ai-platform — sign in
+            nexora-ai-platform - sign in
           </div>
           <div className="terminal__body">
             <RegistrationForm

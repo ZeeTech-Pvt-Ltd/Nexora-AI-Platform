@@ -1,4 +1,4 @@
-// Minimal inline icon set (stroke style, 24px viewBox) — no external icon lib.
+// Minimal inline icon set (stroke style, 24px viewBox) - no external icon lib.
 const PATHS = {
   cpu: (
     <>
