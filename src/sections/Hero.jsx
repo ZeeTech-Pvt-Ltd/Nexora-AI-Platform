@@ -1,7 +1,27 @@
+import { lazy, Suspense } from 'react';
 import { Link } from 'react-router';
 import Icon from '../components/Icon.jsx';
-import RegistrationForm from '../components/RegistrationForm.jsx';
 import { HERO } from '../data/content.js';
+
+// The form (intl-tel-input + its CSS) is heavy; load it off the critical path
+// so the hero paints first. A skeleton holds its space until then.
+const RegistrationForm = lazy(() => import('../components/RegistrationForm.jsx'));
+
+function FormSkeleton() {
+  const bar = (width) => (
+    <div className="form-skeleton__bar" style={{ width }} />
+  );
+  return (
+    <div className="form-skeleton" aria-hidden="true">
+      {bar('55%')}
+      {bar('42%')}
+      {bar('100%')}
+      {bar('100%')}
+      {bar('100%')}
+      {bar('45%')}
+    </div>
+  );
+}
 
 export default function Hero() {
   return (
@@ -63,7 +83,9 @@ export default function Hero() {
               nexora-ai-platform — register
             </div>
             <div className="terminal__body">
-              <RegistrationForm idPrefix="hero" />
+              <Suspense fallback={<FormSkeleton />}>
+                <RegistrationForm idPrefix="hero" />
+              </Suspense>
             </div>
           </div>
         </div>

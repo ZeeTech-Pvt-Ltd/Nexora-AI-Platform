@@ -1,17 +1,22 @@
+import { lazy } from 'react';
 import useMeta from '../hooks/useMeta.js';
 import Hero from '../sections/Hero.jsx';
-import LiveTicker from '../sections/LiveTicker.jsx';
-import StatsBand from '../sections/StatsBand.jsx';
-import Features from '../sections/Features.jsx';
-import Guarantees from '../sections/Guarantees.jsx';
-import Effortless from '../sections/Effortless.jsx';
-import Differentiators from '../sections/Differentiators.jsx';
-import Innovation from '../sections/Innovation.jsx';
-import Testimonials from '../sections/Testimonials.jsx';
-import Promo from '../sections/Promo.jsx';
-import FaqSection from '../sections/FaqSection.jsx';
-import Capabilities from '../sections/Capabilities.jsx';
-import FinalCta from '../sections/FinalCta.jsx';
+import LazySection from '../components/LazySection.jsx';
+
+// Below-fold sections are split into their own chunks and download only as the
+// user scrolls near them — keeps the initial mobile parse to just the hero.
+const LiveTicker = lazy(() => import('../sections/LiveTicker.jsx'));
+const StatsBand = lazy(() => import('../sections/StatsBand.jsx'));
+const Features = lazy(() => import('../sections/Features.jsx'));
+const Guarantees = lazy(() => import('../sections/Guarantees.jsx'));
+const Effortless = lazy(() => import('../sections/Effortless.jsx'));
+const Differentiators = lazy(() => import('../sections/Differentiators.jsx'));
+const Innovation = lazy(() => import('../sections/Innovation.jsx'));
+const Testimonials = lazy(() => import('../sections/Testimonials.jsx'));
+const Promo = lazy(() => import('../sections/Promo.jsx'));
+const FaqSection = lazy(() => import('../sections/FaqSection.jsx'));
+const Capabilities = lazy(() => import('../sections/Capabilities.jsx'));
+const FinalCta = lazy(() => import('../sections/FinalCta.jsx'));
 
 export default function Home() {
   useMeta({
@@ -31,18 +36,18 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <LiveTicker />
-      <StatsBand />
-      <Features />
-      <Guarantees />
-      <Effortless />
-      <Differentiators />
-      <Innovation />
-      <Testimonials />
-      <Promo />
-      <FaqSection />
-      <Capabilities />
-      <FinalCta />
+      <LazySection height={90}><LiveTicker /></LazySection>
+      <LazySection><StatsBand /></LazySection>
+      <LazySection><Features /></LazySection>
+      <LazySection><Guarantees /></LazySection>
+      <LazySection><Effortless /></LazySection>
+      <LazySection><Differentiators /></LazySection>
+      <LazySection><Innovation /></LazySection>
+      <LazySection><Testimonials /></LazySection>
+      <LazySection><Promo /></LazySection>
+      <LazySection><FaqSection /></LazySection>
+      <LazySection><Capabilities /></LazySection>
+      <LazySection><FinalCta /></LazySection>
     </>
   );
 }
