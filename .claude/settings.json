@@ -43,7 +43,8 @@
       "Bash(curl -s -i -X OPTIONS \"https://apexai-experts.com/homeMailAction.php\" -H \"Origin: http://localhost:5184\" -H \"Access-Control-Request-Method: POST\" -H \"Access-Control-Request-Headers: content-type\" --max-time 20)",
       "Bash(curl -s -i -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"NexoraAIPlatform-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"test@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)",
       "Bash(curl -s -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"NexoraAIPlatform-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"tester-20260908@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)",
-      "Bash(curl -s -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"GewinodeRaven-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"tester-20260908b@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)"
+      "Bash(curl -s -X POST \"https://apexai-experts.com/homeMailAction.php\" -H \"Content-Type: application/json\" -H \"Origin: http://localhost:5184\" -d '{\"offerName\":\"GewinodeRaven-Site\",\"firstName\":\"Test\",\"lastName\":\"User\",\"email\":\"tester-20260908b@example.com\",\"phone\":\"+61412345678\"}' --max-time 20)",
+      "Bash(curl -s http://localhost:5184/)"
     ],
     "additionalDirectories": [
       "C:\\Users\\samee\\AppData\\Local\\Temp"
