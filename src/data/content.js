@@ -14,7 +14,9 @@ export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about-us' },
   { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Features', to: '/features' },
   { label: 'Why Invest', to: '/why-invest' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact Us', to: '/contact-us' },
 ];
@@ -162,7 +164,6 @@ export const INNOVATION = {
 export const RATING = {
   score: '4.8',
   total: 1247,
-  note: 'Nexora AI Platform is rated 4.8 out of 5 by members across Trustpilot-style review platforms, based on 1,247 verified reviews.',
 };
 
 export const TESTIMONIALS = {
@@ -172,6 +173,7 @@ export const TESTIMONIALS = {
     {
       name: 'Oliver H.',
       place: 'Sydney',
+      avatar: '/avatars/oliver.jpg',
       tag: 'Verified user',
       stars: 5,
       quote:
@@ -180,6 +182,7 @@ export const TESTIMONIALS = {
     {
       name: 'Priya S.',
       place: 'Melbourne',
+      avatar: '/avatars/priya.jpg',
       tag: 'Verified user',
       stars: 5,
       quote:
@@ -188,10 +191,65 @@ export const TESTIMONIALS = {
     {
       name: 'James W.',
       place: 'Brisbane',
+      avatar: '/avatars/james.jpg',
       tag: 'Verified trade',
       stars: 5,
       quote:
         'What sold me was the transparency. Every trade the AI makes is logged with the reasoning behind it, and the cold-storage report is published openly. It is the first platform where I genuinely understand where my money is.',
+    },
+    {
+      name: 'Emily T.',
+      place: 'Perth',
+      avatar: '/avatars/emily.jpg',
+      tag: 'Verified user',
+      stars: 5,
+      quote:
+        'I had never traded before in my life. Nexora AI Platform walked me through every step - the dashboard is genuinely simple, and the minimum deposit felt like a sensible way to start. Nine months on, I check my portfolio over coffee and get on with my day.',
+    },
+    {
+      name: 'Marcus D.',
+      place: 'Adelaide',
+      avatar: '/avatars/marcus.jpg',
+      tag: 'Verified trade',
+      stars: 5,
+      quote:
+        'I have tried a few platforms over the years and the difference here is real. Withdrawals that actually arrive within 24 hours, support that picks up the phone, and no surprise charges. It sounds basic, but it is rarer than it should be.',
+    },
+    {
+      name: 'Sarah K.',
+      place: 'Gold Coast',
+      avatar: '/avatars/sarah.jpg',
+      tag: 'Verified user',
+      stars: 5,
+      quote:
+        'Security was my biggest worry after reading horror stories about other platforms. The 95% cold storage and the published reserve audits convinced me, and two-factor authentication is on everything. I sleep better knowing my funds are offline.',
+    },
+    {
+      name: 'Daniel R.',
+      place: 'Canberra',
+      avatar: '/avatars/daniel.jpg',
+      tag: 'Verified trade',
+      stars: 5,
+      quote:
+        'I work in data, so I was curious whether the 85% accuracy claim would hold up. Six months in, my own records show the results are remarkably consistent - and every trade comes with the reasoning attached, which makes it easy to audit.',
+    },
+    {
+      name: 'Chloe M.',
+      place: 'Hobart',
+      avatar: '/avatars/chloe.jpg',
+      tag: 'Verified user',
+      stars: 5,
+      quote:
+        'I made a mistake during verification and expected days of back-and-forth. Their support team fixed it in under an hour - at 11pm on a Sunday. That is the moment I knew I had picked the right platform.',
+    },
+    {
+      name: 'Liam B.',
+      place: 'Newcastle',
+      avatar: '/avatars/liam.jpg',
+      tag: 'Verified trade',
+      stars: 5,
+      quote:
+        'I am not chasing overnight riches. I set a conservative risk level and let the engine do its thing. The results have been steady rather than spectacular - exactly what I asked for, which tells me the settings genuinely work.',
     },
   ],
 };

@@ -798,12 +798,6 @@ button {
   font-size: 12.5px;
 }
 
-.rating__note {
-  color: var(--muted);
-  font-size: 14px;
-  max-width: 380px;
-}
-
 .tcard {
   display: flex;
   flex-direction: column;
@@ -836,6 +830,14 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tcard__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .tcard__name {
@@ -1390,6 +1392,16 @@ button {
 
 /* ---------- Responsive ---------- */
 
+/* Hamburger replaces the inline nav from 1200px down */
+@media (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+  }
+}
+
 @media (max-width: 1080px) {
   .grid--4,
   .caps {
@@ -1405,18 +1417,12 @@ button {
 }
 
 @media (max-width: 900px) {
-  .nav {
-    display: none;
-  }
   .grid--3 {
     grid-template-columns: repeat(2, 1fr);
   }
   /* orphan card (odd count) spans the full row instead of leaving a hole */
   .grid--3 > :last-child:nth-child(odd) {
     grid-column: 1 / -1;
-  }
-  .header__burger {
-    display: flex;
   }
   .section {
     padding: 64px 0;

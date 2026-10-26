@@ -36,16 +36,21 @@ export default function Testimonials() {
         </div>
 
         <div className="grid grid--3">
-          {TESTIMONIALS.items.map((t, i) => (
+          {/* Homepage shows a curated three; the full list lives on /reviews. */}
+          {TESTIMONIALS.items.slice(0, 3).map((t, i) => (
             <Reveal className="card tcard" delay={i * 90} key={t.name}>
               <Stars />
               <p className="tcard__quote">“{t.quote}”</p>
               <div className="tcard__person">
                 <div className="tcard__avatar">
-                  {t.name
-                    .split(' ')
-                    .map((w) => w[0])
-                    .join('')}
+                  {t.avatar ? (
+                    <img src={t.avatar} alt={`Portrait of ${t.name}`} loading="lazy" />
+                  ) : (
+                    t.name
+                      .split(' ')
+                      .map((w) => w[0])
+                      .join('')
+                  )}
                 </div>
                 <div>
                   <div className="tcard__name">
@@ -60,9 +65,6 @@ export default function Testimonials() {
             </Reveal>
           ))}
         </div>
-        <p className="rating__note" style={{ marginTop: 20, textAlign: 'center' }}>
-          {RATING.note}
-        </p>
       </div>
     </section>
   );
