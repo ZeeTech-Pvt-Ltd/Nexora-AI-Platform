@@ -1,35 +1,40 @@
+'use client';
+
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Logo from './Logo.jsx';
 import Icon from './Icon.jsx';
 import { NAV_LINKS } from '../data/content.js';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (to) => pathname === to;
 
   return (
     <header className="header">
       <div className="container header__inner">
-        <Link to="/" className="logo" onClick={() => setOpen(false)}>
+        <Link href="/" className="logo" onClick={() => setOpen(false)}>
           <Logo />
           <span className="logo__text">Nexora AI Platform</span>
         </Link>
 
         <nav className="nav" aria-label="Main navigation">
           {NAV_LINKS.map((l) => (
-            <NavLink
+            <Link
               key={l.to}
-              to={l.to}
-              end={l.to === '/'}
-              className={({ isActive }) => `nav__link${isActive ? ' is-active' : ''}`}
+              href={l.to}
+              className={`nav__link${isActive(l.to) ? ' is-active' : ''}`}
             >
               {l.label}
-            </NavLink>
+            </Link>
           ))}
         </nav>
 
         <div className="header__actions">
-          <Link className="btn btn--ember btn--sm" to="/sign-up">
+          <Link className="btn btn--ember btn--sm" href="/sign-up">
             Sign Up
           </Link>
           <button
@@ -44,17 +49,16 @@ export default function Header() {
 
       <div className={`mobile-menu${open ? ' is-open' : ''}`}>
         {NAV_LINKS.map((l) => (
-          <NavLink
+          <Link
             key={l.to}
-            to={l.to}
-            end={l.to === '/'}
+            href={l.to}
             onClick={() => setOpen(false)}
-            className={({ isActive }) => (isActive ? 'is-active' : '')}
+            className={isActive(l.to) ? 'is-active' : ''}
           >
             {l.label}
-          </NavLink>
+          </Link>
         ))}
-        <Link className="btn btn--ember" to="/sign-up" onClick={() => setOpen(false)}>
+        <Link className="btn btn--ember" href="/sign-up" onClick={() => setOpen(false)}>
           Sign Up
         </Link>
       </div>

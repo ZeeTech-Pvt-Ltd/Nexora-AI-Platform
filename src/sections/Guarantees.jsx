@@ -1,4 +1,6 @@
-import { Link } from 'react-router';
+'use client';
+
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
 import Reveal from '../components/Reveal.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -13,7 +15,7 @@ export default function Guarantees() {
           {GUARANTEES.items.map((g, i) => (
             <Reveal
               as={Link}
-              to="/sign-up"
+              href="/sign-up"
               className="card guarantee"
               delay={i * 90}
               key={g.title}

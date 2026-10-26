@@ -1,25 +1,28 @@
-import Icon from '../components/Icon.jsx';
-import RegistrationForm from '../components/RegistrationForm.jsx';
-import Reveal from '../components/Reveal.jsx';
-import useMeta from '../hooks/useMeta.js';
-import { CONTACTS } from '../data/content.js';
+import Icon from '@/components/Icon.jsx';
+import RegistrationForm from '@/components/RegistrationForm.jsx';
+import Reveal from '@/components/Reveal.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { CONTACTS } from '@/data/content.js';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function Contacts() {
-  useMeta({
-    title: 'Contact Nexora AI Platform | 24/7 Support Team',
-    description:
-      'Contact the Nexora AI Platform support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
-    path: '/contact-us',
-    keywords: [
-      'Nexora AI Platform contact',
-      'trading support Australia',
-      '24/7 trading support',
-      'Nexora AI Platform callback',
-    ],
-  });
+export const metadata = buildMeta({
+  title: 'Contact Nexora AI Platform | 24/7 Support Team',
+  description:
+    'Contact the Nexora AI Platform support team 24/7 by email or request a callback. Average first response time: under 5 minutes.',
+  path: '/contact-us',
+  keywords: [
+    'Nexora AI Platform contact',
+    'trading support Australia',
+    '24/7 trading support',
+    'Nexora AI Platform callback',
+  ],
+});
 
+export default function ContactsPage() {
   return (
     <>
+      <BreadcrumbJsonLd path="/contact-us" label="Contact Us" />
+
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">

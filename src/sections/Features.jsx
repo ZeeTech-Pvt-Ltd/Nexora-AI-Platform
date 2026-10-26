@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
 import Reveal from '../components/Reveal.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -21,7 +21,7 @@ export default function Features() {
           ))}
         </div>
         <Reveal className="section-cta">
-          <Link className="btn btn--ghost" to="/sign-up">
+          <Link className="btn btn--ghost" href="/sign-up">
             Register Now
             <Icon name="arrow-right" size={17} />
           </Link>

@@ -1,17 +1,19 @@
-import RegistrationForm from '../components/RegistrationForm.jsx';
-import useMeta from '../hooks/useMeta.js';
+import RegistrationForm from '@/components/RegistrationForm.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function SignIn() {
-  useMeta({
-    title: 'Sign In | Access Your Nexora AI Platform Account',
-    description:
-      'Sign in to your Nexora AI Platform account to view your dashboard, live trades and portfolio performance.',
-    path: '/sign-in',
-    keywords: ['Nexora AI Platform sign in', 'Nexora AI Platform login', 'trading account login'],
-  });
+export const metadata = buildMeta({
+  title: 'Sign In | Access Your Nexora AI Platform Account',
+  description:
+    'Sign in to your Nexora AI Platform account to view your dashboard, live trades and portfolio performance.',
+  path: '/sign-in',
+  keywords: ['Nexora AI Platform sign in', 'Nexora AI Platform login', 'trading account login'],
+});
 
+export default function SignInPage() {
   return (
     <section className="section section--deep">
+      <BreadcrumbJsonLd path="/sign-in" label="Sign In" />
       <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
         <div className="page-hero__glow" />
       </div>

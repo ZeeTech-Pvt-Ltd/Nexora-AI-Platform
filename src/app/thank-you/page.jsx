@@ -1,19 +1,21 @@
-import { Link } from 'react-router';
-import Icon from '../components/Icon.jsx';
-import Reveal from '../components/Reveal.jsx';
-import useMeta from '../hooks/useMeta.js';
+import Link from 'next/link';
+import Icon from '@/components/Icon.jsx';
+import Reveal from '@/components/Reveal.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function ThankYou() {
-  useMeta({
-    title: 'Thank You | Nexora AI Platform Registration Received',
-    description:
-      'Your Nexora AI Platform registration has been received. Our team will contact you shortly to complete your account setup.',
-    path: '/thank-you',
-    keywords: ['Nexora AI Platform registration', 'Nexora AI Platform account confirmation'],
-  });
+export const metadata = buildMeta({
+  title: 'Thank You | Nexora AI Platform Registration Received',
+  description:
+    'Your Nexora AI Platform registration has been received. Our team will contact you shortly to complete your account setup.',
+  path: '/thank-you',
+  keywords: ['Nexora AI Platform registration', 'Nexora AI Platform account confirmation'],
+});
 
+export default function ThankYouPage() {
   return (
     <section className="section section--deep">
+      <BreadcrumbJsonLd path="/thank-you" label="Thank You" />
       <div className="container" style={{ maxWidth: 560, textAlign: 'center' }}>
         <Reveal>
           <div
@@ -28,10 +30,10 @@ export default function ThankYou() {
             Nexora AI Platform account. Please keep your phone nearby.
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link className="btn btn--ember" to="/">
+            <Link className="btn btn--ember" href="/">
               Back to Home
             </Link>
-            <Link className="btn btn--ghost" to="/faq">
+            <Link className="btn btn--ghost" href="/faq">
               Read the FAQ
             </Link>
           </div>

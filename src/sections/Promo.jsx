@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
 import Reveal from '../components/Reveal.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -27,7 +27,7 @@ export default function Promo() {
                 </li>
               ))}
             </ul>
-            <Link className="btn btn--ember" to={PROMO.cta.to} style={{ marginTop: 32 }}>
+            <Link className="btn btn--ember" href={PROMO.cta.to} style={{ marginTop: 32 }}>
               {PROMO.cta.label}
               <Icon name="arrow-right" size={17} />
             </Link>

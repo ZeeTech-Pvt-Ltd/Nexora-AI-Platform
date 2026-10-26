@@ -1,24 +1,27 @@
-import Reveal from '../components/Reveal.jsx';
-import SectionHead from '../components/SectionHead.jsx';
-import useMeta from '../hooks/useMeta.js';
-import { BLOG_POSTS } from '../data/content.js';
+import Reveal from '@/components/Reveal.jsx';
+import SectionHead from '@/components/SectionHead.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { BLOG_POSTS } from '@/data/content.js';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function Blog() {
-  useMeta({
-    title: 'Nexora AI Platform Blog | AI Trading Insights & Guides',
-    description:
-      'Insights from the Nexora AI Platform team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
-    path: '/blog',
-    keywords: [
-      'Nexora AI Platform blog',
-      'AI trading insights',
-      'trading education',
-      'cold storage explained',
-    ],
-  });
+export const metadata = buildMeta({
+  title: 'Nexora AI Platform Blog | AI Trading Insights & Guides',
+  description:
+    'Insights from the Nexora AI Platform team: how AI reads markets, cold storage explained and the habits of calm investors. New articles every two weeks.',
+  path: '/blog',
+  keywords: [
+    'Nexora AI Platform blog',
+    'AI trading insights',
+    'trading education',
+    'cold storage explained',
+  ],
+});
 
+export default function BlogPage() {
   return (
     <>
+      <BreadcrumbJsonLd path="/blog" label="Blog" />
+
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">

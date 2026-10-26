@@ -1,5 +1,8 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/dist/css/intlTelInput.min.css';
 import { SITE } from '../data/content.js';
@@ -15,7 +18,7 @@ export default function RegistrationForm({
   buttonLabel = 'Register Now',
   showConsent = true,
 }) {
-  const navigate = useNavigate();
+  const router = useRouter();
   const phoneRef = useRef(null);
   const itiRef = useRef(null);
   const utilsDeferred = useRef(null);
@@ -191,7 +194,7 @@ export default function RegistrationForm({
         );
       }
       setSuccess('Account request received - redirecting…');
-      setTimeout(() => navigate('/thank-you'), 600);
+      setTimeout(() => router.push('/thank-you'), 600);
     } catch (err) {
       setFormError(err.message || 'Something went wrong. Please try again.');
     } finally {
@@ -290,11 +293,11 @@ export default function RegistrationForm({
             />
             <span>
               I agree to the{' '}
-              <Link to="/terms-of-use" style={{ color: '#b45309', textDecoration: 'underline' }}>
+              <Link href="/terms-of-use" style={{ color: '#b45309', textDecoration: 'underline' }}>
                 Terms of Use
               </Link>{' '}
               and{' '}
-              <Link to="/privacy-policy" style={{ color: '#b45309', textDecoration: 'underline' }}>
+              <Link href="/privacy-policy" style={{ color: '#b45309', textDecoration: 'underline' }}>
                 Privacy Policy
               </Link>
               .

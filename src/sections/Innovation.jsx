@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
 import Reveal from '../components/Reveal.jsx';
 import SectionHead from '../components/SectionHead.jsx';
@@ -29,7 +29,7 @@ export default function Innovation() {
             </ul>
             <Link
               className="btn btn--ember"
-              to={INNOVATION.cta.to}
+              href={INNOVATION.cta.to}
               style={{ marginTop: 32 }}
             >
               {INNOVATION.cta.label}

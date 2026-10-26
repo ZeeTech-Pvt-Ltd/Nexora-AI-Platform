@@ -1,27 +1,7 @@
-import { lazy, Suspense } from 'react';
-import { Link } from 'react-router';
+import Link from 'next/link';
 import Icon from '../components/Icon.jsx';
+import HeroForm from './HeroForm.jsx';
 import { HERO } from '../data/content.js';
-
-// The form (intl-tel-input + its CSS) is heavy; load it off the critical path
-// so the hero paints first. A skeleton holds its space until then.
-const RegistrationForm = lazy(() => import('../components/RegistrationForm.jsx'));
-
-function FormSkeleton() {
-  const bar = (width) => (
-    <div className="form-skeleton__bar" style={{ width }} />
-  );
-  return (
-    <div className="form-skeleton" aria-hidden="true">
-      {bar('55%')}
-      {bar('42%')}
-      {bar('100%')}
-      {bar('100%')}
-      {bar('100%')}
-      {bar('45%')}
-    </div>
-  );
-}
 
 export default function Hero() {
   return (
@@ -45,11 +25,11 @@ export default function Hero() {
             <p className="hero__sub">{HERO.sub}</p>
 
             <div className="hero__cta">
-              <Link className="btn btn--ember" to={HERO.ctaPrimary.to}>
+              <Link className="btn btn--ember" href={HERO.ctaPrimary.to}>
                 {HERO.ctaPrimary.label}
                 <Icon name="arrow-right" size={17} />
               </Link>
-              <Link className="btn btn--ghost" to={HERO.ctaSecondary.to}>
+              <Link className="btn btn--ghost" href={HERO.ctaSecondary.to}>
                 {HERO.ctaSecondary.label}
               </Link>
             </div>
@@ -83,9 +63,7 @@ export default function Hero() {
               nexora-ai-platform - register
             </div>
             <div className="terminal__body">
-              <Suspense fallback={<FormSkeleton />}>
-                <RegistrationForm idPrefix="hero" />
-              </Suspense>
+              <HeroForm />
             </div>
           </div>
         </div>

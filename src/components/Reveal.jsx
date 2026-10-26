@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 
 // Fades content in when it scrolls into view. Respects prefers-reduced-motion (CSS handles it).

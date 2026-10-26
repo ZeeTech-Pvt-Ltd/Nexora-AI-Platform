@@ -1,14 +1,14 @@
-import { Link } from 'react-router';
-import useMeta from '../hooks/useMeta.js';
+import Link from 'next/link';
+import { buildMeta } from '@/lib/seo.js';
+
+export const metadata = buildMeta({
+  title: 'Page Not Found | Nexora AI Platform',
+  description:
+    "The page you were looking for could not be found. Explore Nexora AI Platform's AI-powered trading platform instead.",
+  path: '/',
+});
 
 export default function NotFound() {
-  useMeta({
-    title: 'Page Not Found | Nexora AI Platform',
-    description:
-      "The page you were looking for could not be found. Explore Nexora AI Platform's AI-powered trading platform instead.",
-    path: '/',
-  });
-
   return (
     <section className="section section--deep">
       <div className="container coming-soon">
@@ -17,7 +17,7 @@ export default function NotFound() {
         <p className="section-lead" style={{ maxWidth: 460, margin: '16px auto 32px' }}>
           The link may be broken, or the page may have moved. Let's get you back on track.
         </p>
-        <Link className="btn btn--ember" to="/">
+        <Link className="btn btn--ember" href="/">
           Back to Home
         </Link>
       </div>

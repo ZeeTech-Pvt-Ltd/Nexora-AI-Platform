@@ -1,26 +1,29 @@
-import { Link } from 'react-router';
-import Icon from '../components/Icon.jsx';
-import Reveal from '../components/Reveal.jsx';
-import SectionHead from '../components/SectionHead.jsx';
-import useMeta from '../hooks/useMeta.js';
-import { PRODUCT, CAPABILITIES } from '../data/content.js';
+import Link from 'next/link';
+import Icon from '@/components/Icon.jsx';
+import Reveal from '@/components/Reveal.jsx';
+import SectionHead from '@/components/SectionHead.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { PRODUCT, CAPABILITIES } from '@/data/content.js';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function HowItWorks() {
-  useMeta({
-    title: 'How Nexora AI Platform Works | 3 Steps to AI Trading',
-    description:
-      'See how Nexora AI Platform works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
-    path: '/how-it-works',
-    keywords: [
-      'Nexora AI Platform how it works',
-      'how AI trading works',
-      'automated trading setup',
-      'minimum deposit A$250',
-    ],
-  });
+export const metadata = buildMeta({
+  title: 'How Nexora AI Platform Works | 3 Steps to AI Trading',
+  description:
+    'See how Nexora AI Platform works: create your account in minutes, fund from A$250 and let the AI trading engine analyse and trade around the clock.',
+  path: '/how-it-works',
+  keywords: [
+    'Nexora AI Platform how it works',
+    'how AI trading works',
+    'automated trading setup',
+    'minimum deposit A$250',
+  ],
+});
 
+export default function HowItWorksPage() {
   return (
     <>
+      <BreadcrumbJsonLd path="/how-it-works" label="How It Works" />
+
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">
@@ -59,7 +62,7 @@ export default function HowItWorks() {
             ))}
           </div>
           <Reveal style={{ textAlign: 'center', marginTop: 48 }}>
-            <Link className="btn btn--ember" to={PRODUCT.cta.to}>
+            <Link className="btn btn--ember" href={PRODUCT.cta.to}>
               {PRODUCT.cta.label}
               <Icon name="arrow-right" size={17} />
             </Link>

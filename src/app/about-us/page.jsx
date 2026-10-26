@@ -1,26 +1,29 @@
-import { Link } from 'react-router';
-import Icon from '../components/Icon.jsx';
-import Reveal from '../components/Reveal.jsx';
-import SectionHead from '../components/SectionHead.jsx';
-import useMeta from '../hooks/useMeta.js';
-import { ABOUT } from '../data/content.js';
+import Link from 'next/link';
+import Icon from '@/components/Icon.jsx';
+import Reveal from '@/components/Reveal.jsx';
+import SectionHead from '@/components/SectionHead.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { ABOUT } from '@/data/content.js';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function AboutUs() {
-  useMeta({
-    title: 'About Nexora AI Platform | Our Story, Values & Mission',
-    description:
-      'Meet the team behind Nexora AI Platform, founded in Sydney. Discover our story, values and what makes our AI trading platform different.',
-    path: '/about-us',
-    keywords: [
-      'Nexora AI Platform team',
-      'Nexora AI Platform story',
-      'trading company Sydney',
-      'AI trading engineers',
-    ],
-  });
+export const metadata = buildMeta({
+  title: 'About Nexora AI Platform | Our Story, Values & Mission',
+  description:
+    'Meet the team behind Nexora AI Platform, founded in Sydney. Discover our story, values and what makes our AI trading platform different.',
+  path: '/about-us',
+  keywords: [
+    'Nexora AI Platform team',
+    'Nexora AI Platform story',
+    'trading company Sydney',
+    'AI trading engineers',
+  ],
+});
 
+export default function AboutUsPage() {
   return (
     <>
+      <BreadcrumbJsonLd path="/about-us" label="About Us" />
+
       <div className="page-hero">
         <div className="page-hero__glow" />
         <div className="container">
@@ -109,7 +112,7 @@ export default function AboutUs() {
             </Reveal>
           </div>
           <Reveal style={{ textAlign: 'center', marginTop: 48 }}>
-            <Link className="btn btn--ember" to="/sign-up">
+            <Link className="btn btn--ember" href="/sign-up">
               Join Nexora AI Platform
               <Icon name="arrow-right" size={17} />
             </Link>

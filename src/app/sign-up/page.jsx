@@ -1,23 +1,25 @@
-import RegistrationForm from '../components/RegistrationForm.jsx';
-import useMeta from '../hooks/useMeta.js';
-import { SITE } from '../data/content.js';
+import RegistrationForm from '@/components/RegistrationForm.jsx';
+import BreadcrumbJsonLd from '@/components/BreadcrumbJsonLd.jsx';
+import { SITE } from '@/data/content.js';
+import { buildMeta } from '@/lib/seo.js';
 
-export default function SignUp() {
-  useMeta({
-    title: 'Sign Up | Open a Nexora AI Platform Account Today',
-    description:
-      'Open your Nexora AI Platform trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
-    path: '/sign-up',
-    keywords: [
-      'Nexora AI Platform sign up',
-      'open trading account Australia',
-      'AI trading registration',
-      'Nexora AI Platform register',
-    ],
-  });
+export const metadata = buildMeta({
+  title: 'Sign Up | Open a Nexora AI Platform Account Today',
+  description:
+    'Open your Nexora AI Platform trading account in minutes. Join 3.5 million members, fund from A$250 and let the AI engine trade for you.',
+  path: '/sign-up',
+  keywords: [
+    'Nexora AI Platform sign up',
+    'open trading account Australia',
+    'AI trading registration',
+    'Nexora AI Platform register',
+  ],
+});
 
+export default function SignUpPage() {
   return (
     <section className="section section--deep">
+      <BreadcrumbJsonLd path="/sign-up" label="Sign Up" />
       <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
         <div className="page-hero__glow" />
       </div>
