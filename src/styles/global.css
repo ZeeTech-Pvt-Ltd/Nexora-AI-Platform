@@ -447,40 +447,6 @@ button {
   margin-bottom: 34px;
 }
 
-.hero__steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 14px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 20px;
-}
-
-.hero__steps-sep {
-  color: var(--ember);
-  margin-right: 14px;
-}
-
-.hero__trust {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  color: var(--muted);
-}
-
-.hero__trust span {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.hero__trust svg {
-  color: var(--green);
-}
-
 .readout__row {
   display: flex;
   justify-content: space-between;
@@ -1241,6 +1207,7 @@ button {
   padding: 150px 0 110px;
   text-align: center;
   overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
 }
 
 .page-hero .section-title {
@@ -1434,9 +1401,7 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
-  .hero__cta,
-  .hero__trust,
-  .hero__steps {
+  .hero__cta {
     justify-content: center;
   }
   .testimonials__top {

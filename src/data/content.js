@@ -28,12 +28,6 @@ export const HERO = {
   sub: 'The intelligent trading platform for verified residents of Australia. Our AI engine reads the market around the clock, so you can trade with confidence - without staring at charts all day.',
   ctaPrimary: { label: 'Register Now', to: '/sign-up' },
   ctaSecondary: { label: 'See how it works', to: '/how-it-works' },
-  steps: [
-    'Register in 2 minutes',
-    'Verify as an Australian resident',
-    'Fund from A$250 - the engine starts trading',
-  ],
-  trust: ['2FA & 256-bit SSL', '95% cold storage', '24/7 support'],
 };
 
 export const TICKER = [

@@ -37,11 +37,11 @@ export default function Home() {
       <Features />
       <Guarantees />
       <Effortless />
+      <Markets />
       <Differentiators />
       <Innovation />
       <RegisterSteps />
       <Promo />
-      <Markets />
       <FinalCta />
       <Testimonials />
       <FaqSection />

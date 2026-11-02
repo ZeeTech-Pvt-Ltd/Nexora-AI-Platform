@@ -4,7 +4,7 @@ import { MARKETS } from '../data/content.js';
 
 export default function Markets() {
   return (
-    <section className="section section--surface">
+    <section className="section section--deep">
       <div className="container">
         <Reveal className="section-head">
           <span className="section-label">{MARKETS.label}</span>
