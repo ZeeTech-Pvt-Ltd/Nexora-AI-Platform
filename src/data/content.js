@@ -368,6 +368,7 @@ export const REGISTER_STEPS = {
 export const MARKETS = {
   label: 'Markets',
   title: 'Trade Across Four Major Markets',
+  lead: 'Four asset classes, one intelligent platform. Pick your markets and the engine reads them all - no charts to watch, no screen time required.',
   items: [
     {
       icon: 'bitcoin',
