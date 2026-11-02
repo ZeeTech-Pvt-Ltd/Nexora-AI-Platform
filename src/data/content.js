@@ -340,6 +340,64 @@ export const CAPABILITIES = {
   ],
 };
 
+export const REGISTER_STEPS = {
+  title: 'From Sign-Up to First Insight in 4 Steps',
+  steps: [
+    {
+      step: '01',
+      icon: 'user',
+      title: 'Register',
+      text: 'Share a few basic details to create your profile.',
+    },
+    {
+      step: '02',
+      icon: 'shield-check',
+      title: 'Verify',
+      text: 'Confirm your identity so your account stays secure.',
+    },
+    {
+      step: '03',
+      icon: 'card',
+      title: 'Add funds',
+      text: 'Deposit using any supported payment method.',
+    },
+    {
+      step: '04',
+      icon: 'chart',
+      title: 'Explore insights',
+      text: 'Pick your markets, set your risk preferences and start reviewing AI-generated ideas.',
+    },
+  ],
+  cta: { label: 'Create My Account', to: '/sign-up' },
+};
+
+export const MARKETS = {
+  label: 'Markets',
+  title: 'Trade Across Four Major Markets',
+  items: [
+    {
+      icon: 'bitcoin',
+      title: 'Crypto',
+      text: 'Follow leading digital assets with insights built for fast, volatile price action.',
+    },
+    {
+      icon: 'forex',
+      title: 'Forex',
+      text: 'Track major currency pairs and see how global events shift exchange rates.',
+    },
+    {
+      icon: 'candlestick',
+      title: 'Stocks',
+      text: 'Monitor well-known companies and catch changes in momentum and volume.',
+    },
+    {
+      icon: 'gold-bars',
+      title: 'Commodities',
+      text: 'Watch metals, energy and other essentials that react to world developments.',
+    },
+  ],
+};
+
 export const FINAL_CTA = {
   title: 'Ready to trade with intelligence?',
   lead: 'Join 3.5 million members who let data do the heavy lifting. Your account takes minutes to open - your engine starts working the moment you fund it.',

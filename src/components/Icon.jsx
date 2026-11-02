@@ -142,6 +142,37 @@ const PATHS = {
       <path d="M8.5 12.5l2.5 2.5 4.5-5.5" />
     </>
   ),
+  bitcoin: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M9.5 8.5h2.75a1.75 1.75 0 010 3.5H9.5z" />
+      <path d="M9.5 12h2.75a1.75 1.75 0 010 3.5H9.5z" />
+      <path d="M11.75 6.5v2.5M11.75 15v2.5" />
+    </>
+  ),
+  forex: (
+    <>
+      <path d="M4 8h13M4 8l3-3M4 8l3 3" />
+      <path d="M20 16H7M20 16l-3-3M20 16l-3 3" />
+    </>
+  ),
+  candlestick: (
+    <>
+      <path d="M7 3.5v4" />
+      <rect x="5" y="7.5" width="4" height="6" rx="0.75" />
+      <path d="M7 13.5V17" />
+      <path d="M17 9v3" />
+      <rect x="15" y="12" width="4" height="5" rx="0.75" />
+      <path d="M17 17v3.5" />
+    </>
+  ),
+  'gold-bars': (
+    <>
+      <path d="M6.5 8h11l-1.4 3.2H7.9L6.5 8z" />
+      <path d="M8 13h8l-1 3H9l-1-3z" />
+      <path d="M9.5 18h5l-.6 1.8h-3.8L9.5 18z" />
+    </>
+  ),
 };
 
 export default function Icon({ name, size = 22, className = '', style }) {

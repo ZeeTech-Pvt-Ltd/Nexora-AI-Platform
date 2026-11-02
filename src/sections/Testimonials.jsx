@@ -15,7 +15,7 @@ function Stars({ n = 5, size = 15 }) {
 
 export default function Testimonials() {
   return (
-    <section className="section section--surface">
+    <section className="section section--deep">
       <div className="container">
         <div className="testimonials__top">
           <SectionHead

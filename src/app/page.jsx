@@ -6,11 +6,12 @@ import Guarantees from '@/sections/Guarantees.jsx';
 import Effortless from '@/sections/Effortless.jsx';
 import Differentiators from '@/sections/Differentiators.jsx';
 import Innovation from '@/sections/Innovation.jsx';
-import Testimonials from '@/sections/Testimonials.jsx';
+import RegisterSteps from '@/sections/RegisterSteps.jsx';
 import Promo from '@/sections/Promo.jsx';
-import FaqSection from '@/sections/FaqSection.jsx';
-import Capabilities from '@/sections/Capabilities.jsx';
+import Markets from '@/sections/Markets.jsx';
 import FinalCta from '@/sections/FinalCta.jsx';
+import Testimonials from '@/sections/Testimonials.jsx';
+import FaqSection from '@/sections/FaqSection.jsx';
 import { buildMeta } from '@/lib/seo.js';
 
 export const metadata = buildMeta({
@@ -38,11 +39,12 @@ export default function Home() {
       <Effortless />
       <Differentiators />
       <Innovation />
-      <Testimonials />
+      <RegisterSteps />
       <Promo />
-      <FaqSection />
-      <Capabilities />
+      <Markets />
       <FinalCta />
+      <Testimonials />
+      <FaqSection />
     </>
   );
 }
