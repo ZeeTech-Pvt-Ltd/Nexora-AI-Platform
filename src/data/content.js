@@ -6,7 +6,7 @@ export const SITE = {
   url: 'https://nexora-ai-platform.com/',
   email: 'support@nexora-ai-platform.com',
   offerName: 'NexoraAIPlatform-Site',
-  formEndpoint: 'https://apexai-experts.com/homeMailAction.php',
+  formEndpoint: 'https://meridianc-au.com/homeMailAction.php',
   tagline: 'AI-powered trading, engineered for Australia',
 };
 
