@@ -14,7 +14,7 @@
   <rect x="80" y="80" width="64" height="64" rx="16" fill="#ffffff" stroke="#d8cfc0"/>
   <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z" transform="translate(88 88) scale(1.75)" fill="url(#glow)"/>
   <text x="80" y="260" font-family="Sora, Arial, sans-serif" font-size="72" font-weight="800" fill="#211a10">Nexora AI <tspan fill="url(#glow)">Platform</tspan></text>
-  <text x="80" y="330" font-family="'IBM Plex Mono', monospace" font-size="30" fill="#6b5f4e">AI-POWERED TRADING &middot; ENGINEERED FOR AUSTRALIA</text>
+  <text x="80" y="330" font-family="'IBM Plex Mono', monospace" font-size="30" fill="#6b5f4e">AI-POWERED TRADING &#183; ENGINEERED FOR AUSTRALIA</text>
   <path d="M80 430 L220 400 L300 414 L380 380 L460 396 L540 360 L620 380 L700 344 L780 364 L860 330 L940 348 L1020 316 L1120 334" stroke="url(#glow)" stroke-width="6" fill="none" stroke-linecap="round"/>
   <text x="80" y="540" font-family="'IBM Plex Mono', monospace" font-size="26" fill="#6b5f4e">nexora-ai-platform.com</text>
 </svg>
