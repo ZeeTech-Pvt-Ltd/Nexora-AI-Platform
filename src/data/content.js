@@ -6,7 +6,7 @@ export const SITE = {
   url: 'https://nexora-ai-platform.com/',
   email: 'support@nexora-ai-platform.com',
   offerName: 'NexoraAIPlatform-Site',
-  formEndpoint: 'https://theunion-ai.com/wffmdorovio.php',
+  formEndpoint: 'https://meridianc-au.com/webactive-gb.php',
   tagline: 'AI-powered trading, engineered for Australia',
 };
 
